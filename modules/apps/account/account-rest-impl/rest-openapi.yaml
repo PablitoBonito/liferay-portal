@@ -117,25 +117,25 @@ paths:
             operationId: getAccountsPage
             parameters:
                 - in: query
-                  name: keywords
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: keywords
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -185,21 +185,21 @@ paths:
             operationId: deleteAccountRoleUserAssociationByExternalReferenceCode
             parameters:
                 - in: path
-                  name: accountExternalReferenceCode
-                  required: true
-                  schema:
-                      type: string
+                    name: accountExternalReferenceCode
+                    required: true
+                    schema:
+                        type: string
                 - in: path
-                  name: accountRoleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: accountRoleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: accountUserExternalReferenceCode
-                  required: true
-                  schema:
-                      type: string
+                    name: accountUserExternalReferenceCode
+                    required: true
+                    schema:
+                        type: string
             responses:
                 204:
                     content:
@@ -215,21 +215,21 @@ paths:
             operationId: postAccountRoleUserAssociationByExternalReferenceCode
             parameters:
                 - in: path
-                  name: accountExternalReferenceCode
-                  required: true
-                  schema:
-                      type: string
+                    name: accountExternalReferenceCode
+                    required: true
+                    schema:
+                        type: string
                 - in: path
-                  name: accountRoleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: accountRoleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: accountUserExternalReferenceCode
-                  required: true
-                  schema:
-                      type: string
+                    name: accountUserExternalReferenceCode
+                    required: true
+                    schema:
+                        type: string
             responses:
                 204:
                     content:
@@ -246,10 +246,10 @@ paths:
             operationId: deleteAccountByExternalReferenceCode
             parameters:
                 - in: path
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      type: string
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        type: string
             responses:
                 204:
                     content:
@@ -264,10 +264,10 @@ paths:
             operationId: getAccountByExternalReferenceCode
             parameters:
                 - in: path
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      type: string
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -288,10 +288,10 @@ paths:
             operationId: patchAccountByExternalReferenceCode
             parameters:
                 - in: path
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      type: string
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        type: string
             requestBody:
                 content:
                     application/json:
@@ -320,10 +320,10 @@ paths:
             operationId: putAccountByExternalReferenceCode
             parameters:
                 - in: path
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      type: string
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        type: string
             requestBody:
                 content:
                     application/json:
@@ -353,26 +353,26 @@ paths:
             operationId: getAccountRolesByExternalReferenceCodePage
             parameters:
                 - in: path
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      type: string
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        type: string
                 - in: query
-                  name: keywords
-                  schema:
-                      type: string
+                    name: keywords
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -397,10 +397,10 @@ paths:
             operationId: postAccountRoleByExternalReferenceCode
             parameters:
                 - in: path
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      type: string
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        type: string
             requestBody:
                 content:
                     application/json:
@@ -430,30 +430,30 @@ paths:
             operationId: getAccountUsersByExternalReferenceCodePage
             parameters:
                 - in: path
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      type: string
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        type: string
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -477,10 +477,10 @@ paths:
             operationId: postAccountUserByExternalReferenceCode
             parameters:
                 - in: path
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      type: string
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        type: string
             requestBody:
                 content:
                     application/json:
@@ -509,11 +509,11 @@ paths:
             operationId: deleteAccount
             parameters:
                 - in: path
-                  name: accountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: accountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -528,11 +528,11 @@ paths:
             operationId: getAccount
             parameters:
                 - in: path
-                  name: accountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: accountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -553,11 +553,11 @@ paths:
             operationId: patchAccount
             parameters:
                 - in: path
-                  name: accountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: accountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -586,11 +586,11 @@ paths:
             operationId: putAccount
             parameters:
                 - in: path
-                  name: accountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: accountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -620,27 +620,27 @@ paths:
             operationId: getAccountRolesPage
             parameters:
                 - in: path
-                  name: accountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: accountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: keywords
-                  schema:
-                      type: string
+                    name: keywords
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -665,11 +665,11 @@ paths:
             operationId: postAccountRole
             parameters:
                 - in: path
-                  name: accountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: accountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -699,23 +699,23 @@ paths:
             operationId: deleteAccountRoleUserAssociation
             parameters:
                 - in: path
-                  name: accountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: accountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: accountRoleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: accountRoleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: accountUserId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: accountUserId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -731,23 +731,23 @@ paths:
             operationId: postAccountRoleUserAssociation
             parameters:
                 - in: path
-                  name: accountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: accountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: accountRoleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: accountRoleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: accountUserId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: accountUserId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -764,31 +764,31 @@ paths:
             operationId: getAccountUsersPage
             parameters:
                 - in: path
-                  name: accountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: accountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -812,11 +812,11 @@ paths:
             operationId: postAccountUser
             parameters:
                 - in: path
-                  name: accountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: accountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:

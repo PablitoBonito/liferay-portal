@@ -670,21 +670,21 @@ paths:
             operationId: getProcessMetricsPage
             parameters:
                 - in: query
-                  name: title
-                  schema:
-                      type: string
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: sort
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: title
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -706,11 +706,11 @@ paths:
             operationId: deleteProcess
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -723,11 +723,11 @@ paths:
             operationId: getProcess
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -744,11 +744,11 @@ paths:
             operationId: putProcess
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -770,11 +770,11 @@ paths:
             operationId: postProcessAssigneesPage
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -804,23 +804,23 @@ paths:
             operationId: postProcessAssigneeMetricsPage
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             requestBody:
                 content:
                     application/json:
@@ -850,27 +850,27 @@ paths:
             operationId: getProcessHistogramMetric
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: dateEnd
-                  schema:
-                      format: date-time
-                      type: string
+                    name: dateEnd
+                    schema:
+                        format: date-time
+                        type: string
                 - in: query
-                  name: dateStart
-                  schema:
-                      format: date-time
-                      type: string
+                    name: dateStart
+                    schema:
+                        format: date-time
+                        type: string
                 - in: query
-                  name: unit
-                  required: true
-                  schema:
-                      enum: [Days, Hours, Months, Weeks, Years]
-                      type: string
+                    name: unit
+                    required: true
+                    schema:
+                        enum: [Days, Hours, Months, Weeks, Years]
+                        type: string
             responses:
                 200:
                     content:
@@ -888,60 +888,60 @@ paths:
             operationId: getProcessInstancesPage
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: assigneeIds
-                  schema:
-                      items:
-                          format: int64
-                          type: integer
-                      type: array
+                    name: assigneeIds
+                    schema:
+                        items:
+                            format: int64
+                            type: integer
+                        type: array
                 - in: query
-                  name: classPKs
-                  schema:
-                      items:
-                          format: int64
-                          type: integer
-                      type: array
+                    name: classPKs
+                    schema:
+                        items:
+                            format: int64
+                            type: integer
+                        type: array
                 - in: query
-                  name: completed
-                  schema:
-                      type: boolean
+                    name: completed
+                    schema:
+                        type: boolean
                 - in: query
-                  name: dateEnd
-                  schema:
-                      format: date-time
-                      type: string
+                    name: dateEnd
+                    schema:
+                        format: date-time
+                        type: string
                 - in: query
-                  name: dateStart
-                  schema:
-                      format: date-time
-                      type: string
+                    name: dateStart
+                    schema:
+                        format: date-time
+                        type: string
                 - in: query
-                  name: slaStatuses
-                  schema:
-                      items:
-                          enum: [OnTime, Overdue, Untracked]
-                          type: string
-                      type: array
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: taskNames
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: slaStatuses
+                    schema:
+                        items:
+                            enum: [OnTime, Overdue, Untracked]
+                            type: string
+                        type: array
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: taskNames
+                    schema:
+                        items:
+                            type: string
+                        type: array
             responses:
                 200:
                     content:
@@ -962,11 +962,11 @@ paths:
             operationId: postProcessInstance
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -992,17 +992,17 @@ paths:
             operationId: deleteProcessInstance
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: instanceId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: instanceId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -1015,17 +1015,17 @@ paths:
             operationId: getProcessInstance
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: instanceId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: instanceId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1042,17 +1042,17 @@ paths:
             operationId: patchProcessInstance
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: instanceId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: instanceId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -1074,17 +1074,17 @@ paths:
             operationId: patchProcessInstanceComplete
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: instanceId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: instanceId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -1106,25 +1106,25 @@ paths:
             operationId: getProcessMetric
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: completed
-                  schema:
-                      type: boolean
+                    name: completed
+                    schema:
+                        type: boolean
                 - in: query
-                  name: dateEnd
-                  schema:
-                      format: date-time
-                      type: string
+                    name: dateEnd
+                    schema:
+                        format: date-time
+                        type: string
                 - in: query
-                  name: dateStart
-                  schema:
-                      format: date-time
-                      type: string
+                    name: dateStart
+                    schema:
+                        format: date-time
+                        type: string
             responses:
                 200:
                     content:
@@ -1142,11 +1142,11 @@ paths:
             operationId: getProcessNodesPage
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1167,11 +1167,11 @@ paths:
             operationId: postProcessNode
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -1197,41 +1197,41 @@ paths:
             operationId: getProcessNodeMetricsPage
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: completed
-                  schema:
-                      type: boolean
+                    name: completed
+                    schema:
+                        type: boolean
                 - in: query
-                  name: dateEnd
-                  schema:
-                      format: date-time
-                      type: string
+                    name: dateEnd
+                    schema:
+                        format: date-time
+                        type: string
                 - in: query
-                  name: dateStart
-                  schema:
-                      format: date-time
-                      type: string
+                    name: dateStart
+                    schema:
+                        format: date-time
+                        type: string
                 - in: query
-                  name: key
-                  schema:
-                      type: string
+                    name: key
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -1253,17 +1253,17 @@ paths:
             operationId: deleteProcessNode
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: nodeId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: nodeId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -1277,15 +1277,15 @@ paths:
             operationId: getProcessRolesPage
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: completed
-                  schema:
-                      type: boolean
+                    name: completed
+                    schema:
+                        type: boolean
             responses:
                 200:
                     content:
@@ -1307,24 +1307,24 @@ paths:
             operationId: getProcessSLAsPage
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: status
-                  required: false
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: status
+                    required: false
+                    schema:
+                        type: integer
             responses:
                 200:
                     content:
@@ -1345,11 +1345,11 @@ paths:
             operationId: postProcessSLA
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -1385,11 +1385,11 @@ paths:
             operationId: getProcessTasksPage
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1410,11 +1410,11 @@ paths:
             operationId: postProcessTask
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -1440,17 +1440,17 @@ paths:
             operationId: deleteProcessTask
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: taskId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: taskId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -1463,17 +1463,17 @@ paths:
             operationId: getProcessTask
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: taskId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: taskId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1490,17 +1490,17 @@ paths:
             operationId: patchProcessTask
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: taskId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: taskId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -1522,17 +1522,17 @@ paths:
             operationId: patchProcessTaskComplete
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: taskId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: taskId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -1554,11 +1554,11 @@ paths:
             operationId: getProcessTitle
             parameters:
                 - in: path
-                  name: processId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: processId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1573,11 +1573,11 @@ paths:
             operationId: deleteSLA
             parameters:
                 - in: path
-                  name: slaId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: slaId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -1590,11 +1590,11 @@ paths:
             operationId: getSLA
             parameters:
                 - in: path
-                  name: slaId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: slaId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1611,11 +1611,11 @@ paths:
             operationId: putSLA
             parameters:
                 - in: path
-                  name: slaId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: slaId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -1651,13 +1651,13 @@ paths:
             operationId: postProcessTasksPage
             parameters:
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
             requestBody:
                 content:
                     application/json:

@@ -497,30 +497,30 @@ paths:
             operationId: getDiscountByExternalReferenceCodeDiscountRulesPage
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -573,7 +573,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a list of Discount Rule related to a Discount.
             tags:
                 - DiscountRule
@@ -581,16 +581,16 @@ paths:
             operationId: postDiscountByExternalReferenceCodeDiscountRule
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -654,7 +654,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Creates or Updates a Discount Rule.
             tags:
                 - DiscountRule
@@ -663,17 +663,17 @@ paths:
             operationId: deleteDiscountAccountGroup
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 204:
                     description:
@@ -692,7 +692,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Deletes a Discount Account Group by ID.
             tags:
                 - DiscountAccountGroup
@@ -701,17 +701,17 @@ paths:
             operationId: deleteDiscountCategory
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 204:
                     description:
@@ -730,7 +730,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Deletes a Discount Category by ID.
             tags:
                 - DiscountCategory
@@ -739,17 +739,17 @@ paths:
             operationId: deleteDiscountProduct
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 204:
                     description:
@@ -768,7 +768,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Deletes a Discount Product by ID.
             tags:
                 - DiscountProduct
@@ -777,17 +777,17 @@ paths:
             operationId: deleteDiscountRule
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 204:
                     description:
@@ -806,7 +806,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Deletes a Discount Rule by ID.
             tags:
                 - DiscountRule
@@ -814,17 +814,17 @@ paths:
             operationId: getDiscountRule
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 200:
                     content:
@@ -873,7 +873,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a Discount Rule by ID.
             tags:
                 - DiscountRule
@@ -881,17 +881,17 @@ paths:
             operationId: patchDiscountRule
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -945,7 +945,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Updates a Discount Rule by ID.
             tags:
                 - DiscountRule
@@ -954,19 +954,19 @@ paths:
             operationId: getDiscountsPage
             parameters:
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -1016,7 +1016,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a list of Discount.
             tags:
                 - Discount
@@ -1085,7 +1085,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Creates or Updates a Discount.
             tags:
                 - Discount
@@ -1094,16 +1094,16 @@ paths:
             operationId: deleteDiscountByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 204:
                     description:
@@ -1122,7 +1122,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Deletes a Discount by external reference code.
             tags:
                 - Discount
@@ -1130,16 +1130,16 @@ paths:
             operationId: getDiscountByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 200:
                     content:
@@ -1188,7 +1188,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a Discount by external reference code.
             tags:
                 - Discount
@@ -1196,16 +1196,16 @@ paths:
             operationId: patchDiscountByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -1259,7 +1259,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Updates a Discount by external reference code.
             tags:
                 - Discount
@@ -1268,30 +1268,30 @@ paths:
             operationId: getDiscountByExternalReferenceCodeDiscountAccountGroupsPage
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -1341,7 +1341,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a list of Discount Account Groups.
             tags:
                 - DiscountAccountGroup
@@ -1349,16 +1349,16 @@ paths:
             operationId: postDiscountByExternalReferenceCodeDiscountAccountGroup
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -1422,7 +1422,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Creates or updates a Discount Account Group.
             tags:
                 - DiscountAccountGroup
@@ -1431,30 +1431,30 @@ paths:
             operationId: getDiscountByExternalReferenceCodeDiscountCategoriesPage
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -1504,7 +1504,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a list of Discount Categories.
             tags:
                 - DiscountCategory
@@ -1512,16 +1512,16 @@ paths:
             operationId: postDiscountByExternalReferenceCodeDiscountCategory
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -1585,7 +1585,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Creates or updates a Discount Category.
             tags:
                 - DiscountCategory
@@ -1594,30 +1594,30 @@ paths:
             operationId: getDiscountByExternalReferenceCodeDiscountProductsPage
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -1667,7 +1667,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a list of Discount Products.
             tags:
                 - DiscountProduct
@@ -1675,16 +1675,16 @@ paths:
             operationId: postDiscountByExternalReferenceCodeDiscountProduct
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -1748,7 +1748,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Creates or updates a Discount Product.
             tags:
                 - DiscountProduct
@@ -1757,17 +1757,17 @@ paths:
             operationId: deleteDiscount
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 204:
                     description:
@@ -1786,7 +1786,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Deletes a Discount by ID.
             tags:
                 - Discount
@@ -1794,17 +1794,17 @@ paths:
             operationId: getDiscount
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 200:
                     content:
@@ -1853,7 +1853,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a Discount by ID.
             tags:
                 - Discount
@@ -1861,17 +1861,17 @@ paths:
             operationId: patchDiscount
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -1925,7 +1925,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Updates a Discount by ID.
             tags:
                 - Discount
@@ -1934,31 +1934,31 @@ paths:
             operationId: getDiscountIdDiscountAccountGroupsPage
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -2008,7 +2008,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a list of Discount Account Groups.
             tags:
                 - DiscountAccountGroup
@@ -2016,17 +2016,17 @@ paths:
             operationId: postDiscountIdDiscountAccountGroup
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -2090,7 +2090,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Creates or updates a Discount Account Group.
             tags:
                 - DiscountAccountGroup
@@ -2099,31 +2099,31 @@ paths:
             operationId: getDiscountIdDiscountCategoriesPage
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -2173,7 +2173,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a list of Discount Categories.
             tags:
                 - DiscountCategory
@@ -2181,17 +2181,17 @@ paths:
             operationId: postDiscountIdDiscountCategory
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -2255,7 +2255,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Creates or updates a Discount Category.
             tags:
                 - DiscountCategory
@@ -2264,31 +2264,31 @@ paths:
             operationId: getDiscountIdDiscountProductsPage
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -2338,7 +2338,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a list of Discount Products.
             tags:
                 - DiscountProduct
@@ -2346,17 +2346,17 @@ paths:
             operationId: postDiscountIdDiscountProduct
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -2420,7 +2420,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Creates or updates a Discount Product.
             tags:
                 - DiscountProduct
@@ -2429,31 +2429,31 @@ paths:
             operationId: getDiscountIdDiscountRulesPage
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -2506,7 +2506,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a list of Discount Rule related to a Discount.
             tags:
                 - DiscountRule
@@ -2514,17 +2514,17 @@ paths:
             operationId: postDiscountIdDiscountRule
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -2588,7 +2588,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Creates or Updates a Discount Rule.
             tags:
                 - DiscountRule
@@ -2597,16 +2597,16 @@ paths:
             operationId: deletePriceEntryByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 204:
                     description:
@@ -2625,7 +2625,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Deletes a Price Entry by external reference code.
             tags:
                 - PriceEntry
@@ -2633,16 +2633,16 @@ paths:
             operationId: getPriceEntryByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 200:
                     content:
@@ -2691,7 +2691,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a Price Entry by external reference code.
             tags:
                 - PriceEntry
@@ -2699,16 +2699,16 @@ paths:
             operationId: patchPriceEntryByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -2762,7 +2762,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Updates a Price Entry by external reference code.
             tags:
                 - PriceEntry
@@ -2771,30 +2771,30 @@ paths:
             operationId: getPriceEntryByExternalReferenceCodeTierPricesPage
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -2847,7 +2847,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a list of Tier Price related to a Price Entry.
             tags:
                 - TierPrice
@@ -2855,16 +2855,16 @@ paths:
             operationId: postPriceEntryByExternalReferenceCodeTierPrice
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -2928,7 +2928,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Creates or Updates a Tier Price.
             tags:
                 - TierPrice
@@ -2937,17 +2937,17 @@ paths:
             operationId: deletePriceEntry
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 204:
                     description:
@@ -2966,7 +2966,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Deletes a Price Entry by ID.
             tags:
                 - PriceEntry
@@ -2974,17 +2974,17 @@ paths:
             operationId: getPriceEntry
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 200:
                     content:
@@ -3033,7 +3033,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a Price Entry by ID.
             tags:
                 - PriceEntry
@@ -3041,17 +3041,17 @@ paths:
             operationId: patchPriceEntry
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -3105,7 +3105,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Updates a Price Entry by ID.
             tags:
                 - PriceEntry
@@ -3114,31 +3114,31 @@ paths:
             operationId: getPriceEntryIdTierPricesPage
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -3191,7 +3191,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a list of Tier Price related to a Price Entry.
             tags:
                 - TierPrice
@@ -3199,17 +3199,17 @@ paths:
             operationId: postPriceEntryIdTierPrice
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -3273,7 +3273,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Creates or Updates a Tier Price.
             tags:
                 - TierPrice
@@ -3282,17 +3282,17 @@ paths:
             operationId: deletePriceListAccountGroup
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 204:
                     description:
@@ -3311,7 +3311,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Deletes a Price List Account Group by ID.
             tags:
                 - PriceListAccountGroup
@@ -3320,25 +3320,25 @@ paths:
             operationId: getPriceListsPage
             parameters:
                 - in: query
-                  name: filter
-                  required: false
-                  schema:
-                      type: string
+                    name: filter
+                    required: false
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: sort
-                  required: false
-                  schema:
-                      type: string
+                    name: sort
+                    required: false
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -3388,7 +3388,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a list of Price Lists.
             tags:
                 - PriceList
@@ -3457,7 +3457,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Creates or updates a Price List.
             tags:
                 - PriceList
@@ -3466,16 +3466,16 @@ paths:
             operationId: deletePriceListByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 204:
                     description:
@@ -3494,7 +3494,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Deletes a Price List by external reference code.
             tags:
                 - PriceList
@@ -3502,16 +3502,16 @@ paths:
             operationId: getPriceListByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 200:
                     content:
@@ -3560,7 +3560,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a Price List by external reference code.
             tags:
                 - PriceList
@@ -3568,16 +3568,16 @@ paths:
             operationId: patchPriceListByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -3631,7 +3631,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Updates a Price List by external reference code.
             tags:
                 - PriceList
@@ -3640,30 +3640,30 @@ paths:
             operationId: getPriceListByExternalReferenceCodePriceEntriesPage
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -3713,7 +3713,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a list of Price Entries.
             tags:
                 - PriceEntry
@@ -3721,16 +3721,16 @@ paths:
             operationId: postPriceListByExternalReferenceCodePriceEntry
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -3794,7 +3794,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Creates or updates a Price Entry.
             tags:
                 - PriceEntry
@@ -3803,30 +3803,30 @@ paths:
             operationId: getPriceListByExternalReferenceCodePriceListAccountGroupPage
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -3876,7 +3876,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a list of Price List Account Groups.
             tags:
                 - PriceListAccountGroup
@@ -3884,16 +3884,16 @@ paths:
             operationId: postPriceListByExternalReferenceCodePriceListAccountGroup
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -3957,7 +3957,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Creates or updates a Price List Account Group.
             tags:
                 - PriceListAccountGroup
@@ -3966,17 +3966,17 @@ paths:
             operationId: deletePriceList
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 204:
                     description:
@@ -3995,7 +3995,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Deletes a Price List by ID.
             tags:
                 - PriceList
@@ -4003,17 +4003,17 @@ paths:
             operationId: getPriceList
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 200:
                     content:
@@ -4062,7 +4062,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a Price List by ID.
             tags:
                 - PriceList
@@ -4070,17 +4070,17 @@ paths:
             operationId: patchPriceList
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -4134,7 +4134,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Updates a Price List by ID.
             tags:
                 - PriceList
@@ -4143,31 +4143,31 @@ paths:
             operationId: getPriceListIdPriceEntriesPage
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -4217,7 +4217,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a list of Price Entries.
             tags:
                 - PriceEntry
@@ -4225,17 +4225,17 @@ paths:
             operationId: postPriceListIdPriceEntry
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -4299,7 +4299,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Creates or updates a Price Entry.
             tags:
                 - PriceEntry
@@ -4308,31 +4308,31 @@ paths:
             operationId: getPriceListIdPriceListAccountGroupsPage
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -4382,7 +4382,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a list of Price List Account Groups.
             tags:
                 - PriceListAccountGroup
@@ -4390,17 +4390,17 @@ paths:
             operationId: postPriceListIdPriceListAccountGroup
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -4464,7 +4464,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Creates or updates a Price List Account Group.
             tags:
                 - PriceListAccountGroup
@@ -4473,16 +4473,16 @@ paths:
             operationId: deleteTierPriceByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 204:
                     description:
@@ -4501,7 +4501,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Deletes a Tier Price by external reference code.
             tags:
                 - TierPrice
@@ -4509,16 +4509,16 @@ paths:
             operationId: getTierPriceByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 200:
                     content:
@@ -4567,7 +4567,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a Tier Price by external reference code.
             tags:
                 - TierPrice
@@ -4575,16 +4575,16 @@ paths:
             operationId: patchTierPriceByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -4638,7 +4638,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Updates a Tier Price by external reference code.
             tags:
                 - TierPrice
@@ -4647,17 +4647,17 @@ paths:
             operationId: deleteTierPrice
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 204:
                     description:
@@ -4676,7 +4676,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Deletes a Tier Price by ID.
             tags:
                 - TierPrice
@@ -4684,17 +4684,17 @@ paths:
             operationId: getTierPrice
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 200:
                     content:
@@ -4743,7 +4743,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.read
+                    - HeadlessCommerceAdminPricing.read
             summary: Gets a Tier Price by ID.
             tags:
                 - TierPrice
@@ -4751,17 +4751,17 @@ paths:
             operationId: patchTierPrice
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -4815,74 +4815,74 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminPricing.write
+                    - HeadlessCommerceAdminPricing.write
             summary: Updates a Tier Price by ID.
             tags:
                 - TierPrice
 servers:
     - description:
-          Liferay Commerce API server
+        Liferay Commerce API server
       url: https://commerce.{environment}.liferay.com/commerce-admin-pricing/{basePath}
       variables:
-          basePath:
-              default: v1.0
-          environment:
-              default: api
-              enum:
-                  - api
-                  - api.dev
-                  - api.uat
+        basePath:
+            default: v1.0
+        environment:
+            default: api
+            enum:
+                - api
+                - api.dev
+                - api.uat
     - description:
-          Liferay Commerce Local Development (Hosts file)
+        Liferay Commerce Local Development (Hosts file)
       url: "{protocol}://{host}:{port}/o/commerce-admin-pricing/{basePath}"
       variables:
-          basePath:
-              default: v1.0
-          host:
-              default: test.dev
-          port:
-              default: "8080"
-              enum:
-                  - "443"
-                  - "8080"
-                  - "8443"
-          protocol:
-              default: http
-              enum:
-                  - http
-                  - https
+        basePath:
+            default: v1.0
+        host:
+            default: test.dev
+        port:
+            default: "8080"
+            enum:
+                - "443"
+                - "8080"
+                - "8443"
+        protocol:
+            default: http
+            enum:
+                - http
+                - https
     - description:
-          Liferay Commerce Local Development with Ngrok
+        Liferay Commerce Local Development with Ngrok
       url: "{protocol}://{host}.ngrok.io/o/commerce-admin-pricing/{basePath}"
       variables:
-          basePath:
-              default: v1.0
-          host:
-              default: commerce
-          protocol:
-              default: http
-              enum:
-                  - http
-                  - https
+        basePath:
+            default: v1.0
+        host:
+            default: commerce
+        protocol:
+            default: http
+            enum:
+                - http
+                - https
     - description:
-          SwaggerHub API Auto Mocking
+        SwaggerHub API Auto Mocking
       url: https://virtserver.swaggerhub.com/liferay6/commerce-admin-pricing/v1.0
     - description:
-          SwaggerHub API Auto Mocking
+        SwaggerHub API Auto Mocking
       url: https://virtserver.swaggerhub.com/liferayinc/commerce-admin-pricing/v1.0
 tags:
     - description:
-          Operations on Discount Rules
+        Operations on Discount Rules
       name: DiscountRule
     - description:
-          Operations on Discounts
+        Operations on Discounts
       name: Discount
     - description:
-          Operations on Price Entries
+        Operations on Price Entries
       name: PriceEntry
     - description:
-          Operations on Price Lists
+        Operations on Price Lists
       name: PriceList
     - description:
-          Operations on Tier Prices
+        Operations on Tier Prices
       name: TierPrice

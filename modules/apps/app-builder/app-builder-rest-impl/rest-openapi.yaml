@@ -72,44 +72,44 @@ paths:
             operationId: getAppsPage
             parameters:
                 - in: query
-                  name: active
-                  schema:
-                      type: boolean
+                    name: active
+                    schema:
+                        type: boolean
                 - in: query
-                  name: deploymentTypes
-                  schema:
-                      items:
-                          enum: [productMenu, standalone, widget]
-                          type: string
-                      type: array
+                    name: deploymentTypes
+                    schema:
+                        items:
+                            enum: [productMenu, standalone, widget]
+                            type: string
+                        type: array
                 - in: query
-                  name: keywords
-                  schema:
-                      type: string
+                    name: keywords
+                    schema:
+                        type: string
                 - in: query
-                  name: scope
-                  schema:
-                      type: string
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: userIds
-                  schema:
-                      items:
-                          format: int64
-                          type: integer
-                      type: array
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: scope
+                    schema:
+                        type: string
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: sort
+                    required: false
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  required: false
-                  schema:
-                      type: string
+                    name: userIds
+                    schema:
+                        items:
+                            format: int64
+                            type: integer
+                        type: array
             responses:
                 200:
                     content:
@@ -131,11 +131,11 @@ paths:
             operationId: deleteApp
             parameters:
                 - in: path
-                  name: appId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: appId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -148,11 +148,11 @@ paths:
             operationId: getApp
             parameters:
                 - in: path
-                  name: appId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: appId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -169,11 +169,11 @@ paths:
             operationId: putApp
             parameters:
                 - in: path
-                  name: appId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: appId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -199,11 +199,11 @@ paths:
             operationId: putAppDeploy
             parameters:
                 - in: path
-                  name: appId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: appId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     description:
@@ -214,11 +214,11 @@ paths:
             operationId: putAppUndeploy
             parameters:
                 - in: path
-                  name: appId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: appId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     description:
@@ -229,32 +229,32 @@ paths:
             operationId: getDataDefinitionAppsPage
             parameters:
                 - in: path
-                  name: dataDefinitionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataDefinitionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: keywords
-                  schema:
-                      type: string
+                    name: keywords
+                    schema:
+                        type: string
                 - in: query
-                  name: scope
-                  schema:
-                      type: string
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: scope
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  required: false
-                  schema:
-                      type: string
+                    name: sort
+                    required: false
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -275,11 +275,11 @@ paths:
             operationId: postDataDefinitionApp
             parameters:
                 - in: path
-                  name: dataDefinitionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataDefinitionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -305,32 +305,32 @@ paths:
             operationId: getSiteAppsPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: keywords
-                  schema:
-                      type: string
+                    name: keywords
+                    schema:
+                        type: string
                 - in: query
-                  name: scope
-                  schema:
-                      type: string
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: scope
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  required: false
-                  schema:
-                      type: string
+                    name: sort
+                    required: false
+                    schema:
+                        type: string
             responses:
                 200:
                     content:

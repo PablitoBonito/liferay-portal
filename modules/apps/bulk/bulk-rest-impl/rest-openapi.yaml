@@ -32,14 +32,14 @@ components:
             allOf:
                 - $ref: "#/components/schemas/DocumentBulkSelection"
                 - properties:
-                      keywordsToAdd:
-                          items:
-                              type: string
-                          type: array
-                      keywordsToRemove:
-                          items:
-                              type: string
-                          type: array
+                    keywordsToAdd:
+                        items:
+                            type: string
+                        type: array
+                    keywordsToRemove:
+                        items:
+                            type: string
+                        type: array
         Selection:
             properties:
                 size:
@@ -61,16 +61,16 @@ components:
             allOf:
                 - $ref: "#/components/schemas/DocumentBulkSelection"
                 - properties:
-                      taxonomyCategoryIdsToAdd:
-                          items:
-                              format: int64
-                              type: integer
-                          type: array
-                      taxonomyCategoryIdsToRemove:
-                          items:
-                              format: int64
-                              type: integer
-                          type: array
+                    taxonomyCategoryIdsToAdd:
+                        items:
+                            format: int64
+                            type: integer
+                        type: array
+                    taxonomyCategoryIdsToRemove:
+                        items:
+                            format: int64
+                            type: integer
+                        type: array
         TaxonomyVocabulary:
             properties:
                 multiValued:
@@ -185,11 +185,11 @@ paths:
             operationId: postSiteTaxonomyVocabulariesCommonPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:

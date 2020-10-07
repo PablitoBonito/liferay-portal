@@ -157,16 +157,16 @@ paths:
             operationId: deleteWarehouseItemByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          "The resource external reference code"
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            "The resource external reference code"
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 "204":
                     description:
@@ -185,7 +185,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - CommerceOpenApiAdmin.write
+                    - CommerceOpenApiAdmin.write
             summary: "Deletes a Warehouse Item by ID."
             tags:
                 - WarehouseItem
@@ -193,16 +193,16 @@ paths:
             operationId: getWarehouseItemByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          "The resource external reference code"
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            "The resource external reference code"
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 "200":
                     content:
@@ -251,7 +251,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - CommerceOpenApiAdmin.read
+                    - CommerceOpenApiAdmin.read
             summary: "Gets a Warehouse Item by ID."
             tags:
                 - WarehouseItem
@@ -259,16 +259,16 @@ paths:
             operationId: patchWarehouseItemByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          "The resource external reference code"
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            "The resource external reference code"
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -322,7 +322,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - CommerceOpenApiAdmin.write
+                    - CommerceOpenApiAdmin.write
             summary: "Updates a Warehouse Item by ID."
             tags:
                 - WarehouseItem
@@ -330,16 +330,16 @@ paths:
             operationId: postWarehouseItemByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          "The resource external reference code"
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            "The resource external reference code"
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -403,7 +403,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - CommerceOpenApiAdmin.write
+                    - CommerceOpenApiAdmin.write
             summary: "Creates a Warehouse Item by external reference code."
             tags:
                 - WarehouseItem
@@ -412,15 +412,15 @@ paths:
             operationId: deleteWarehouseItem
             parameters:
                 - in: path
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          "The resource Id"
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            "The resource Id"
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
             responses:
                 "204":
                     description:
@@ -439,7 +439,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - CommerceOpenApiAdmin.write
+                    - CommerceOpenApiAdmin.write
             summary: "Deletes a Warehouse Item by ID."
             tags:
                 - WarehouseItem
@@ -447,15 +447,15 @@ paths:
             operationId: getWarehouseItem
             parameters:
                 - in: path
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          "The resource Id"
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            "The resource Id"
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
             responses:
                 "200":
                     content:
@@ -504,7 +504,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - CommerceOpenApiAdmin.read
+                    - CommerceOpenApiAdmin.read
             summary: "Gets a Warehouse Item by ID."
             tags:
                 - WarehouseItem
@@ -512,15 +512,15 @@ paths:
             operationId: patchWarehouseItem
             parameters:
                 - in: path
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          "The resource Id"
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            "The resource Id"
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -574,7 +574,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - CommerceOpenApiAdmin.write
+                    - CommerceOpenApiAdmin.write
             summary: "Updates a Warehouse Item by ID."
             tags:
                 - WarehouseItem
@@ -583,14 +583,14 @@ paths:
             operationId: deleteWarehousByExternalReferenceCode
             parameters:
                 - in: path
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          "The resource external reference code"
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            "The resource external reference code"
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
             responses:
                 "204":
                     description:
@@ -609,7 +609,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - CommerceOpenApiAdmin.write
+                    - CommerceOpenApiAdmin.write
             summary: "Deletes a Warehouse by external reference code."
             tags:
                 - Warehouse
@@ -617,14 +617,14 @@ paths:
             operationId: getWarehousByExternalReferenceCode
             parameters:
                 - in: path
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          "The resource external reference code"
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            "The resource external reference code"
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
             responses:
                 "200":
                     content:
@@ -673,7 +673,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - CommerceOpenApiAdmin.read
+                    - CommerceOpenApiAdmin.read
             summary: "Gets a Warehouse by external reference code."
             tags:
                 - Warehouse
@@ -681,14 +681,14 @@ paths:
             operationId: patchWarehousByExternalReferenceCode
             parameters:
                 - in: path
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          "The resource external reference code"
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            "The resource external reference code"
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
             requestBody:
                 content:
                     application/json:
@@ -742,7 +742,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - CommerceOpenApiAdmin.write
+                    - CommerceOpenApiAdmin.write
             summary: "Updates a Warehouse by external reference code."
             tags:
                 - Warehouse
@@ -751,24 +751,24 @@ paths:
             operationId: getWarehousByExternalReferenceCodeWarehouseItemsPage
             parameters:
                 - in: path
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          "The resource external reference code"
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            "The resource external reference code"
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
                 - in: query
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
             responses:
                 "200":
                     content:
@@ -821,7 +821,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - CommerceOpenApiAdmin.read
+                    - CommerceOpenApiAdmin.read
             summary: "Gets a list of Warehouse Items related to an Warehouse."
             tags:
                 - WarehouseItem
@@ -829,14 +829,14 @@ paths:
             operationId: postWarehousByExternalReferenceCodeWarehouseItem
             parameters:
                 - in: path
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          "The resource external reference code"
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            "The resource external reference code"
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
             requestBody:
                 content:
                     application/json:
@@ -900,7 +900,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - CommerceOpenApiAdmin.write
+                    - CommerceOpenApiAdmin.write
             summary: "Creates or updates an Warehouse Item."
             tags:
                 - WarehouseItem
@@ -909,15 +909,15 @@ paths:
             operationId: deleteWarehousId
             parameters:
                 - in: path
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          "The resource Id"
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            "The resource Id"
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
             responses:
                 "204":
                     description:
@@ -936,7 +936,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - CommerceOpenApiAdmin.write
+                    - CommerceOpenApiAdmin.write
             summary: "Deletes a Warehouse by ID."
             tags:
                 - Warehouse
@@ -944,15 +944,15 @@ paths:
             operationId: getWarehousId
             parameters:
                 - in: path
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          "The resource Id"
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            "The resource Id"
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
             responses:
                 "200":
                     content:
@@ -1001,7 +1001,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - CommerceOpenApiAdmin.read
+                    - CommerceOpenApiAdmin.read
             summary: "Gets a Warehouse by ID."
             tags:
                 - Warehouse
@@ -1009,15 +1009,15 @@ paths:
             operationId: patchWarehousId
             parameters:
                 - in: path
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          "The resource Id"
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            "The resource Id"
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -1071,7 +1071,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - CommerceOpenApiAdmin.write
+                    - CommerceOpenApiAdmin.write
             summary: "Updates a Warehouse by ID."
             tags:
                 - Warehouse
@@ -1080,25 +1080,25 @@ paths:
             operationId: getWarehousIdWarehouseItemsPage
             parameters:
                 - in: path
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          "The resource Id"
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            "The resource Id"
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
                 - in: query
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
             responses:
                 "200":
                     content:
@@ -1151,7 +1151,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - CommerceOpenApiAdmin.read
+                    - CommerceOpenApiAdmin.read
             summary: "Gets a list of Warehouse Items related to a Warehouse."
             tags:
                 - WarehouseItem
@@ -1159,15 +1159,15 @@ paths:
             operationId: postWarehousIdWarehouseItem
             parameters:
                 - in: path
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          "The resource Id"
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            "The resource Id"
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -1231,7 +1231,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - CommerceOpenApiAdmin.write
+                    - CommerceOpenApiAdmin.write
             summary: "Creates or updates an Warehouse Item."
             tags:
                 - WarehouseItem
@@ -1240,39 +1240,39 @@ paths:
             operationId: getWarehouseItemsUpdatedPage
             parameters:
                 - in: query
-                  explode: true
-                  name: end
-                  required: false
-                  schema:
-                      description:
-                          "Ending date/time of the timespan for which to retrieve the\ndata."
-                      format: date
-                      type: string
-                  style: form
+                    explode: true
+                    name: end
+                    required: false
+                    schema:
+                        description:
+                            "Ending date/time of the timespan for which to retrieve the\ndata."
+                        format: date
+                        type: string
+                    style: form
                 - in: query
-                  explode: true
-                  name: start
-                  required: false
-                  schema:
-                      description:
-                          "Starting date/time of the timespan for which to retrieve the\ndata"
-                      format: date
-                      type: string
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: start
+                    required: false
+                    schema:
+                        description:
+                            "Starting date/time of the timespan for which to retrieve the\ndata"
+                        format: date
+                        type: string
+                    style: form
             responses:
                 "200":
                     content:
@@ -1325,7 +1325,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - CommerceOpenApiAdmin.write
+                    - CommerceOpenApiAdmin.write
             summary: "Retrieves the list of WarehouseItem that have been updated (added or\nchanged) within the given timespan. If only one parameter is used for searching\nitems a default timespan of 30 days is used."
             tags:
                 - WarehouseItem
@@ -1334,25 +1334,25 @@ paths:
             operationId: getWarehousesPage
             parameters:
                 - in: query
-                  name: filter
-                  required: false
-                  schema:
-                      type: string
+                    name: filter
+                    required: false
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: sort
-                  required: false
-                  schema:
-                      type: string
+                    name: sort
+                    required: false
+                    schema:
+                        type: string
             responses:
                 "200":
                     content:
@@ -1405,7 +1405,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - CommerceOpenApiAdmin.read
+                    - CommerceOpenApiAdmin.read
             summary: "Gets a List of Warehouses."
             tags:
                 - Warehouse
@@ -1474,55 +1474,55 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - CommerceOpenApiAdmin.write
+                    - CommerceOpenApiAdmin.write
             summary: "Creates or updates a Warehouse."
             tags:
                 - Warehouse
 servers:
     - description:
-          "Liferay Commerce API server"
+        "Liferay Commerce API server"
       url: "https://commerce.{environment}.liferay.com/commerce-admin-inventory/{basePath}"
       variables:
-          basePath:
-              default: v1.0
-          environment:
-              default: api
-              enum:
-                  - api
-                  - api.dev
-                  - api.uat
+        basePath:
+            default: v1.0
+        environment:
+            default: api
+            enum:
+                - api
+                - api.dev
+                - api.uat
     - description:
-          "Liferay Commerce Local Development (Hosts file)"
+        "Liferay Commerce Local Development (Hosts file)"
       url: "{protocol}://{host}:{port}/o/commerce-admin-inventory/{basePath}"
       variables:
-          basePath:
-              default: v1.0
-          host:
-              default: test.dev
-          port:
-              default: "8080"
-              enum:
-                  - "443"
-                  - "8080"
-                  - "8443"
-          protocol:
-              default: http
-              enum:
-                  - http
-                  - https
+        basePath:
+            default: v1.0
+        host:
+            default: test.dev
+        port:
+            default: "8080"
+            enum:
+                - "443"
+                - "8080"
+                - "8443"
+        protocol:
+            default: http
+            enum:
+                - http
+                - https
     - description:
-          "Liferay Commerce Local Development with Ngrok"
+        "Liferay Commerce Local Development with Ngrok"
       url: "{protocol}://{host}.ngrok.io/o/commerce-admin-inventory/{basePath}"
       variables:
-          basePath:
-              default: v1.0
-          host:
-              default: commerce
-          protocol:
-              default: http
-              enum:
-                  - http
-                  - https
+        basePath:
+            default: v1.0
+        host:
+            default: commerce
+        protocol:
+            default: http
+            enum:
+                - http
+                - https
     - description:
-          "SwaggerHub API Auto Mocking"
+        "SwaggerHub API Auto Mocking"
       url: "https://virtserver.swaggerhub.com/liferay6/commerce-admin-inventory/v1.0"

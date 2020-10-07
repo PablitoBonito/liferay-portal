@@ -35,11 +35,11 @@ paths:
         get:
             parameters:
                 - in: path
-                  name: id
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: id
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:

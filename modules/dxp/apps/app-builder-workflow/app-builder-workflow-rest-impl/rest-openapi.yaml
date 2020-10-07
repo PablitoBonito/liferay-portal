@@ -104,11 +104,11 @@ paths:
             operationId: deleteAppWorkflow
             parameters:
                 - in: path
-                  name: appId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: appId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -121,11 +121,11 @@ paths:
             operationId: getAppWorkflow
             parameters:
                 - in: path
-                  name: appId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: appId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -142,11 +142,11 @@ paths:
             operationId: postAppWorkflow
             parameters:
                 - in: path
-                  name: appId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: appId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -171,11 +171,11 @@ paths:
             operationId: putAppWorkflow
             parameters:
                 - in: path
-                  name: appId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: appId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -201,11 +201,11 @@ paths:
             operationId: postAppAppWorkflowDataRecordLinksPage
             parameters:
                 - in: path
-                  name: appId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: appId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:

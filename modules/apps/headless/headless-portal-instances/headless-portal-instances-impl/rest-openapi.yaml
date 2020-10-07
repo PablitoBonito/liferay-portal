@@ -39,12 +39,12 @@ paths:
             operationId: getPortalInstancesPage
             parameters:
                 - in: query
-                  explode: true
-                  name: skipDefault
-                  required: false
-                  schema:
-                      type: boolean
-                  style: form
+                    explode: true
+                    name: skipDefault
+                    required: false
+                    schema:
+                        type: boolean
+                    style: form
             responses:
                 200:
                     content:
@@ -68,10 +68,10 @@ paths:
             operationId: postPortalInstance
             parameters:
                 - in: query
-                  name: initializerKey
-                  required: false
-                  schema:
-                      type: string
+                    name: initializerKey
+                    required: false
+                    schema:
+                        type: string
             requestBody:
                 content:
                     application/json:
@@ -100,10 +100,10 @@ paths:
             operationId: deletePortalInstance
             parameters:
                 - in: path
-                  name: portalInstanceId
-                  required: true
-                  schema:
-                      type: string
+                    name: portalInstanceId
+                    required: true
+                    schema:
+                        type: string
             responses:
                 204:
                     content:
@@ -119,10 +119,10 @@ paths:
             operationId: getPortalInstance
             parameters:
                 - in: path
-                  name: portalInstanceId
-                  required: true
-                  schema:
-                      type: string
+                    name: portalInstanceId
+                    required: true
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -144,10 +144,10 @@ paths:
             operationId: patchPortalInstance
             parameters:
                 - in: path
-                  name: portalInstanceId
-                  required: true
-                  schema:
-                      type: string
+                    name: portalInstanceId
+                    required: true
+                    schema:
+                        type: string
             requestBody:
                 content:
                     application/json:
@@ -178,10 +178,10 @@ paths:
             operationId: putPortalInstanceActivate
             parameters:
                 - in: path
-                  name: portalInstanceId
-                  required: true
-                  schema:
-                      type: string
+                    name: portalInstanceId
+                    required: true
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -199,10 +199,10 @@ paths:
             operationId: putPortalInstanceDeactivate
             parameters:
                 - in: path
-                  name: portalInstanceId
-                  required: true
-                  schema:
-                      type: string
+                    name: portalInstanceId
+                    required: true
+                    schema:
+                        type: string
             responses:
                 200:
                     content:

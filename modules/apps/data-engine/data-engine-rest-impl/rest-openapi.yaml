@@ -329,27 +329,27 @@ paths:
             operationId: getDataDefinitionByContentTypeContentTypePage
             parameters:
                 - in: path
-                  name: contentType
-                  required: true
-                  schema:
-                      type: string
+                    name: contentType
+                    required: true
+                    schema:
+                        type: string
                 - in: query
-                  name: keywords
-                  schema:
-                      type: string
+                    name: keywords
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: sort
-                  required: false
-                  schema:
-                      type: string
+                    name: sort
+                    required: false
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -370,10 +370,10 @@ paths:
             operationId: postDataDefinitionByContentType
             parameters:
                 - in: path
-                  name: contentType
-                  required: true
-                  schema:
-                      type: string
+                    name: contentType
+                    required: true
+                    schema:
+                        type: string
             requestBody:
                 content:
                     application/json:
@@ -414,11 +414,11 @@ paths:
             operationId: deleteDataDefinition
             parameters:
                 - in: path
-                  name: dataDefinitionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataDefinitionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -431,11 +431,11 @@ paths:
             operationId: getDataDefinition
             parameters:
                 - in: path
-                  name: dataDefinitionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataDefinitionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -452,11 +452,11 @@ paths:
             operationId: putDataDefinition
             parameters:
                 - in: path
-                  name: dataDefinitionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataDefinitionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -482,15 +482,15 @@ paths:
             operationId: getDataDefinitionDataDefinitionFieldLinkPage
             parameters:
                 - in: path
-                  name: dataDefinitionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataDefinitionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: fieldName
-                  schema:
-                      type: string
+                    name: fieldName
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -512,11 +512,11 @@ paths:
             operationId: deleteDataLayoutsDataDefinition
             parameters:
                 - in: path
-                  name: dataDefinitionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataDefinitionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -529,28 +529,28 @@ paths:
             operationId: getDataDefinitionDataLayoutsPage
             parameters:
                 - in: path
-                  name: dataDefinitionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataDefinitionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: keywords
-                  schema:
-                      type: string
+                    name: keywords
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: sort
-                  required: false
-                  schema:
-                      type: string
+                    name: sort
+                    required: false
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -571,11 +571,11 @@ paths:
             operationId: postDataDefinitionDataLayout
             parameters:
                 - in: path
-                  name: dataDefinitionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataDefinitionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -601,11 +601,11 @@ paths:
             operationId: deleteDataListViewsDataDefinition
             parameters:
                 - in: path
-                  name: dataDefinitionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataDefinitionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -618,28 +618,28 @@ paths:
             operationId: getDataDefinitionDataListViewsPage
             parameters:
                 - in: path
-                  name: dataDefinitionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataDefinitionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: keywords
-                  schema:
-                      type: string
+                    name: keywords
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: sort
-                  required: false
-                  schema:
-                      type: string
+                    name: sort
+                    required: false
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -660,11 +660,11 @@ paths:
             operationId: postDataDefinitionDataListView
             parameters:
                 - in: path
-                  name: dataDefinitionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataDefinitionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -692,11 +692,11 @@ paths:
             operationId: getDataDefinitionDataRecordCollection
             parameters:
                 - in: path
-                  name: dataDefinitionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataDefinitionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -714,23 +714,23 @@ paths:
             operationId: getDataDefinitionDataRecordCollectionsPage
             parameters:
                 - in: path
-                  name: dataDefinitionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataDefinitionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: keywords
-                  schema:
-                      type: string
+                    name: keywords
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
             responses:
                 200:
                     content:
@@ -751,11 +751,11 @@ paths:
             operationId: postDataDefinitionDataRecordCollection
             parameters:
                 - in: path
-                  name: dataDefinitionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataDefinitionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -781,34 +781,34 @@ paths:
             operationId: getDataDefinitionDataRecordsPage
             parameters:
                 - in: path
-                  name: dataDefinitionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataDefinitionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: dataListViewId
-                  required: false
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataListViewId
+                    required: false
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: keywords
-                  schema:
-                      type: string
+                    name: keywords
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: sort
-                  required: false
-                  schema:
-                      type: string
+                    name: sort
+                    required: false
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -829,11 +829,11 @@ paths:
             operationId: postDataDefinitionDataRecord
             parameters:
                 - in: path
-                  name: dataDefinitionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataDefinitionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -859,15 +859,15 @@ paths:
             operationId: getDataDefinitionPermissionsPage
             parameters:
                 - in: path
-                  name: dataDefinitionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataDefinitionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: roleNames
-                  schema:
-                      type: string
+                    name: roleNames
+                    schema:
+                        type: string
             responses:
                 204:
                     content:
@@ -880,11 +880,11 @@ paths:
             operationId: putDataDefinitionPermission
             parameters:
                 - in: path
-                  name: dataDefinitionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataDefinitionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -898,11 +898,11 @@ paths:
             operationId: deleteDataLayout
             parameters:
                 - in: path
-                  name: dataLayoutId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataLayoutId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -915,11 +915,11 @@ paths:
             operationId: getDataLayout
             parameters:
                 - in: path
-                  name: dataLayoutId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataLayoutId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -936,11 +936,11 @@ paths:
             operationId: putDataLayout
             parameters:
                 - in: path
-                  name: dataLayoutId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataLayoutId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -966,11 +966,11 @@ paths:
             operationId: postDataLayoutContext
             parameters:
                 - in: path
-                  name: dataLayoutId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataLayoutId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -1000,11 +1000,11 @@ paths:
             operationId: deleteDataListView
             parameters:
                 - in: path
-                  name: dataListViewId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataListViewId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -1017,11 +1017,11 @@ paths:
             operationId: getDataListView
             parameters:
                 - in: path
-                  name: dataListViewId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataListViewId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1038,11 +1038,11 @@ paths:
             operationId: putDataListView
             parameters:
                 - in: path
-                  name: dataListViewId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataListViewId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -1068,11 +1068,11 @@ paths:
             operationId: deleteDataRecordCollection
             parameters:
                 - in: path
-                  name: dataRecordCollectionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataRecordCollectionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -1085,11 +1085,11 @@ paths:
             operationId: getDataRecordCollection
             parameters:
                 - in: path
-                  name: dataRecordCollectionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataRecordCollectionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1106,11 +1106,11 @@ paths:
             operationId: putDataRecordCollection
             parameters:
                 - in: path
-                  name: dataRecordCollectionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataRecordCollectionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -1136,34 +1136,34 @@ paths:
             operationId: getDataRecordCollectionDataRecordsPage
             parameters:
                 - in: path
-                  name: dataRecordCollectionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataRecordCollectionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: dataListViewId
-                  required: false
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataListViewId
+                    required: false
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: keywords
-                  schema:
-                      type: string
+                    name: keywords
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: sort
-                  required: false
-                  schema:
-                      type: string
+                    name: sort
+                    required: false
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -1184,11 +1184,11 @@ paths:
             operationId: postDataRecordCollectionDataRecord
             parameters:
                 - in: path
-                  name: dataRecordCollectionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataRecordCollectionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -1214,19 +1214,19 @@ paths:
             operationId: getDataRecordCollectionDataRecordExport
             parameters:
                 - in: path
-                  name: dataRecordCollectionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataRecordCollectionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
             responses:
                 204:
                     content:
@@ -1244,15 +1244,15 @@ paths:
             operationId: getDataRecordCollectionPermissionsPage
             parameters:
                 - in: path
-                  name: dataRecordCollectionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataRecordCollectionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: roleNames
-                  schema:
-                      type: string
+                    name: roleNames
+                    schema:
+                        type: string
             responses:
                 204:
                     content:
@@ -1265,11 +1265,11 @@ paths:
             operationId: putDataRecordCollectionPermission
             parameters:
                 - in: path
-                  name: dataRecordCollectionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataRecordCollectionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -1283,11 +1283,11 @@ paths:
             operationId: getDataRecordCollectionPermissionByCurrentUser
             parameters:
                 - in: path
-                  name: dataRecordCollectionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataRecordCollectionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1305,11 +1305,11 @@ paths:
             operationId: deleteDataRecord
             parameters:
                 - in: path
-                  name: dataRecordId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataRecordId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -1322,11 +1322,11 @@ paths:
             operationId: getDataRecord
             parameters:
                 - in: path
-                  name: dataRecordId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataRecordId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1343,11 +1343,11 @@ paths:
             operationId: patchDataRecord
             parameters:
                 - in: path
-                  name: dataRecordId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataRecordId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -1372,11 +1372,11 @@ paths:
             operationId: putDataRecord
             parameters:
                 - in: path
-                  name: dataRecordId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataRecordId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -1402,33 +1402,33 @@ paths:
             operationId: getSiteDataDefinitionByContentTypeContentTypePage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: contentType
+                    required: true
+                    schema:
+                        type: string
                 - in: path
-                  name: contentType
-                  required: true
-                  schema:
-                      type: string
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: keywords
-                  schema:
-                      type: string
+                    name: keywords
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: sort
-                  required: false
-                  schema:
-                      type: string
+                    name: sort
+                    required: false
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -1449,16 +1449,16 @@ paths:
             operationId: postSiteDataDefinitionByContentType
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: contentType
+                    required: true
+                    schema:
+                        type: string
                 - in: path
-                  name: contentType
-                  required: true
-                  schema:
-                      type: string
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -1484,21 +1484,21 @@ paths:
             operationId: getSiteDataDefinitionByContentTypeByDataDefinitionKey
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: contentType
+                    required: true
+                    schema:
+                        type: string
                 - in: path
-                  name: contentType
-                  required: true
-                  schema:
-                      type: string
+                    name: dataDefinitionKey
+                    required: true
+                    schema:
+                        type: string
                 - in: path
-                  name: dataDefinitionKey
-                  required: true
-                  schema:
-                      type: string
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1516,21 +1516,21 @@ paths:
             operationId: getSiteDataLayoutByContentTypeByDataLayoutKey
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: contentType
+                    required: true
+                    schema:
+                        type: string
                 - in: path
-                  name: contentType
-                  required: true
-                  schema:
-                      type: string
+                    name: dataLayoutKey
+                    required: true
+                    schema:
+                        type: string
                 - in: path
-                  name: dataLayoutKey
-                  required: true
-                  schema:
-                      type: string
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1548,16 +1548,16 @@ paths:
             operationId: getSiteDataRecordCollectionByDataRecordCollectionKey
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: dataRecordCollectionKey
+                    required: true
+                    schema:
+                        type: string
                 - in: path
-                  name: dataRecordCollectionKey
-                  required: true
-                  schema:
-                      type: string
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:

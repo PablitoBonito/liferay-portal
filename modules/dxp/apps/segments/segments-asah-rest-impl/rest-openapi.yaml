@@ -82,10 +82,10 @@ paths:
             operationId: deleteExperiment
             parameters:
                 - in: path
-                  name: experimentId
-                  required: true
-                  schema:
-                      type: string
+                    name: experimentId
+                    required: true
+                    schema:
+                        type: string
             responses:
                 204:
                     content:
@@ -98,10 +98,10 @@ paths:
             operationId: getExperiment
             parameters:
                 - in: path
-                  name: experimentId
-                  required: true
-                  schema:
-                      type: string
+                    name: experimentId
+                    required: true
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -119,11 +119,11 @@ paths:
             operationId: postExperimentRun
             parameters:
                 - in: path
-                  name: experimentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: experimentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -149,11 +149,11 @@ paths:
             operationId: postExperimentStatus
             parameters:
                 - in: path
-                  name: experimentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: experimentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:

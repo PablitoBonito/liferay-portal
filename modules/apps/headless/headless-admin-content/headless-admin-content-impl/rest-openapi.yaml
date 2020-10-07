@@ -16,11 +16,11 @@ paths:
                 Renders and retrieves HTML for the page definition using the theme of specified site.
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:

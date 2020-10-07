@@ -819,11 +819,11 @@ paths:
             operationId: getEmailAddress
             parameters:
                 - in: path
-                  name: emailAddressId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: emailAddressId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -858,13 +858,13 @@ paths:
             operationId: getMyUserAccountSitesPage
             parameters:
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
             responses:
                 200:
                     content:
@@ -885,17 +885,17 @@ paths:
             operationId: getMyUserAccountSubscriptionsPage
             parameters:
                 - in: query
-                  name: contentType
-                  schema:
-                      type: string
+                    name: contentType
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
             responses:
                 200:
                     content:
@@ -917,11 +917,11 @@ paths:
             operationId: deleteMyUserAccountSubscription
             parameters:
                 - in: path
-                  name: subscriptionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: subscriptionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -934,11 +934,11 @@ paths:
             operationId: getMyUserAccountSubscription
             parameters:
                 - in: path
-                  name: subscriptionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: subscriptionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -958,29 +958,29 @@ paths:
             operationId: getOrganizationsPage
             parameters:
                 - in: query
-                  name: flatten
-                  schema:
-                      type: boolean
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: flatten
+                    schema:
+                        type: boolean
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -1029,10 +1029,10 @@ paths:
             operationId: deleteOrganization
             parameters:
                 - in: path
-                  name: organizationId
-                  required: true
-                  schema:
-                      type: string
+                    name: organizationId
+                    required: true
+                    schema:
+                        type: string
             responses:
                 204:
                     content:
@@ -1047,10 +1047,10 @@ paths:
             operationId: getOrganization
             parameters:
                 - in: path
-                  name: organizationId
-                  required: true
-                  schema:
-                      type: string
+                    name: organizationId
+                    required: true
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -1071,10 +1071,10 @@ paths:
             operationId: patchOrganization
             parameters:
                 - in: path
-                  name: organizationId
-                  required: true
-                  schema:
-                      type: string
+                    name: organizationId
+                    required: true
+                    schema:
+                        type: string
             requestBody:
                 content:
                     application/json:
@@ -1104,10 +1104,10 @@ paths:
             operationId: putOrganization
             parameters:
                 - in: path
-                  name: organizationId
-                  required: true
-                  schema:
-                      type: string
+                    name: organizationId
+                    required: true
+                    schema:
+                        type: string
             requestBody:
                 content:
                     application/json:
@@ -1135,10 +1135,10 @@ paths:
             operationId: getOrganizationEmailAddressesPage
             parameters:
                 - in: path
-                  name: organizationId
-                  required: true
-                  schema:
-                      type: string
+                    name: organizationId
+                    required: true
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -1162,10 +1162,10 @@ paths:
             operationId: getOrganizationPhonesPage
             parameters:
                 - in: path
-                  name: organizationId
-                  required: true
-                  schema:
-                      type: string
+                    name: organizationId
+                    required: true
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -1189,10 +1189,10 @@ paths:
             operationId: getOrganizationPostalAddressesPage
             parameters:
                 - in: path
-                  name: organizationId
-                  required: true
-                  schema:
-                      type: string
+                    name: organizationId
+                    required: true
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -1216,30 +1216,30 @@ paths:
             operationId: getOrganizationUserAccountsPage
             parameters:
                 - in: path
-                  name: organizationId
-                  required: true
-                  schema:
-                      type: string
+                    name: organizationId
+                    required: true
+                    schema:
+                        type: string
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -1263,10 +1263,10 @@ paths:
             operationId: getOrganizationWebUrlsPage
             parameters:
                 - in: path
-                  name: organizationId
-                  required: true
-                  schema:
-                      type: string
+                    name: organizationId
+                    required: true
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -1291,34 +1291,34 @@ paths:
             operationId: getOrganizationOrganizationsPage
             parameters:
                 - in: path
-                  name: parentOrganizationId
-                  required: true
-                  schema:
-                      type: string
+                    name: parentOrganizationId
+                    required: true
+                    schema:
+                        type: string
                 - in: query
-                  name: flatten
-                  schema:
-                      type: boolean
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: flatten
+                    schema:
+                        type: boolean
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -1342,11 +1342,11 @@ paths:
             operationId: getPhone
             parameters:
                 - in: path
-                  name: phoneId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: phoneId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1366,11 +1366,11 @@ paths:
             operationId: getPostalAddress
             parameters:
                 - in: path
-                  name: postalAddressId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: postalAddressId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1390,13 +1390,13 @@ paths:
             operationId: getRolesPage
             parameters:
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
             responses:
                 200:
                     content:
@@ -1420,11 +1420,11 @@ paths:
             operationId: getRole
             parameters:
                 - in: path
-                  name: roleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: roleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1445,17 +1445,17 @@ paths:
             operationId: deleteRoleUserAccountAssociation
             parameters:
                 - in: path
-                  name: roleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: roleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: userAccountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: userAccountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -1471,17 +1471,17 @@ paths:
             operationId: postRoleUserAccountAssociation
             parameters:
                 - in: path
-                  name: roleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: roleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: userAccountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: userAccountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1498,23 +1498,23 @@ paths:
             operationId: deleteOrganizationRoleUserAccountAssociation
             parameters:
                 - in: path
-                  name: roleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: organizationId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: userAccountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: roleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: organizationId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: userAccountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -1530,23 +1530,23 @@ paths:
             operationId: postOrganizationRoleUserAccountAssociation
             parameters:
                 - in: path
-                  name: roleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: organizationId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: userAccountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: roleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: organizationId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: userAccountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1563,23 +1563,23 @@ paths:
             operationId: deleteSiteRoleUserAccountAssociation
             parameters:
                 - in: path
-                  name: roleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: roleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: userAccountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: userAccountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -1595,23 +1595,23 @@ paths:
             operationId: postSiteRoleUserAccountAssociation
             parameters:
                 - in: path
-                  name: roleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: roleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: userAccountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: userAccountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1627,19 +1627,19 @@ paths:
             operationId: getSegmentUserAccountsPage
             parameters:
                 - in: path
-                  name: segmentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: segmentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
             responses:
                 200:
                     content:
@@ -1661,10 +1661,10 @@ paths:
             operationId: getSiteByFriendlyUrlPath
             parameters:
                 - in: path
-                  name: friendlyUrlPath
-                  required: true
-                  schema:
-                      type: string
+                    name: friendlyUrlPath
+                    required: true
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -1681,11 +1681,11 @@ paths:
             operationId: getSite
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1704,19 +1704,19 @@ paths:
             operationId: getSiteSegmentsPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
             responses:
                 200:
                     content:
@@ -1740,31 +1740,31 @@ paths:
             operationId: getSiteUserAccountsPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -1793,17 +1793,17 @@ paths:
             operationId: getSiteUserAccountSegmentsPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: userAccountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: userAccountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1827,25 +1827,25 @@ paths:
             operationId: getUserAccountsPage
             parameters:
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -1893,11 +1893,11 @@ paths:
             operationId: deleteUserAccount
             parameters:
                 - in: path
-                  name: userAccountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: userAccountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -1912,11 +1912,11 @@ paths:
             operationId: getUserAccount
             parameters:
                 - in: path
-                  name: userAccountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: userAccountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -1937,11 +1937,11 @@ paths:
             operationId: patchUserAccount
             parameters:
                 - in: path
-                  name: userAccountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: userAccountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -1969,11 +1969,11 @@ paths:
             operationId: putUserAccount
             parameters:
                 - in: path
-                  name: userAccountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: userAccountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -2000,11 +2000,11 @@ paths:
             operationId: getUserAccountEmailAddressesPage
             parameters:
                 - in: path
-                  name: userAccountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: userAccountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -2028,11 +2028,11 @@ paths:
             operationId: getUserAccountPhonesPage
             parameters:
                 - in: path
-                  name: userAccountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: userAccountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -2056,11 +2056,11 @@ paths:
             operationId: getUserAccountPostalAddressesPage
             parameters:
                 - in: path
-                  name: userAccountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: userAccountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -2084,11 +2084,11 @@ paths:
             operationId: getUserAccountWebUrlsPage
             parameters:
                 - in: path
-                  name: userAccountId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: userAccountId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -2112,11 +2112,11 @@ paths:
             operationId: getWebUrl
             parameters:
                 - in: path
-                  name: webUrlId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: webUrlId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:

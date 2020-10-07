@@ -3232,37 +3232,37 @@ paths:
             operationId: getAssetLibraryContentElementsPage
             parameters:
                 - in: path
-                  name: assetLibraryId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: assetLibraryId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -3284,24 +3284,24 @@ paths:
             operationId: getAssetLibraryContentSetByKeyContentSetElementsPage
             parameters:
                 - in: path
-                  name: assetLibraryId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: assetLibraryId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: key
-                  required: true
-                  schema:
-                      type: string
+                    name: key
+                    required: true
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
             responses:
                 200:
                     content:
@@ -3323,24 +3323,24 @@ paths:
             operationId: getAssetLibraryContentSetByUuidContentSetElementsPage
             parameters:
                 - in: path
-                  name: assetLibraryId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: assetLibraryId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: uuid
-                  required: true
-                  schema:
-                      type: string
+                    name: uuid
+                    required: true
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
             responses:
                 200:
                     content:
@@ -3362,37 +3362,37 @@ paths:
             operationId: getAssetLibraryContentStructuresPage
             parameters:
                 - in: path
-                  name: assetLibraryId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: assetLibraryId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -3414,37 +3414,37 @@ paths:
             operationId: getAssetLibraryContentTemplatesPage
             parameters:
                 - in: path
-                  name: assetLibraryId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: assetLibraryId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -3466,41 +3466,41 @@ paths:
             operationId: getAssetLibraryDocumentFoldersPage
             parameters:
                 - in: path
-                  name: assetLibraryId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: assetLibraryId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: flatten
-                  schema:
-                      type: boolean
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: flatten
+                    schema:
+                        type: boolean
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -3521,11 +3521,11 @@ paths:
             operationId: postAssetLibraryDocumentFolder
             parameters:
                 - in: path
-                  name: assetLibraryId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: assetLibraryId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -3551,41 +3551,41 @@ paths:
             operationId: getAssetLibraryDocumentsPage
             parameters:
                 - in: path
-                  name: assetLibraryId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: assetLibraryId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: flatten
-                  schema:
-                      type: boolean
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: flatten
+                    schema:
+                        type: boolean
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -3606,11 +3606,11 @@ paths:
             operationId: postAssetLibraryDocument
             parameters:
                 - in: path
-                  name: assetLibraryId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: assetLibraryId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     multipart/form-data:
@@ -3639,41 +3639,41 @@ paths:
             operationId: getAssetLibraryStructuredContentFoldersPage
             parameters:
                 - in: path
-                  name: assetLibraryId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: assetLibraryId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: flatten
-                  schema:
-                      type: boolean
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: flatten
+                    schema:
+                        type: boolean
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -3694,11 +3694,11 @@ paths:
             operationId: postAssetLibraryStructuredContentFolder
             parameters:
                 - in: path
-                  name: assetLibraryId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: assetLibraryId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -3723,46 +3723,46 @@ paths:
         get:
             operationId: getAssetLibraryStructuredContentsPage
             parameters:
-                - in: path
-                  name: assetLibraryId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
-                - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
-                - in: query
-                  name: flatten
-                  schema:
-                      type: boolean
-                - in: query
-                  name: filter
-                  schema:
-                      type: string
-                - in: query
-                  name: page
-                  schema:
-                      type: integer
-                - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
-                - in: query
-                  name: search
-                  schema:
-                      type: string
-                - in: query
-                  name: sort
-                  schema:
-                      type: string
                 - in: header
-                  name: Accept-Language
-                  schema:
-                      type: string
+                    name: Accept-Language
+                    schema:
+                        type: string
+                - in: path
+                    name: assetLibraryId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
+                - in: query
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
+                - in: query
+                    name: filter
+                    schema:
+                        type: string
+                - in: query
+                    name: flatten
+                    schema:
+                        type: boolean
+                - in: query
+                    name: page
+                    schema:
+                        type: integer
+                - in: query
+                    name: pageSize
+                    schema:
+                        type: integer
+                - in: query
+                    name: search
+                    schema:
+                        type: string
+                - in: query
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -3782,16 +3782,16 @@ paths:
         post:
             operationId: postAssetLibraryStructuredContent
             parameters:
-                - in: path
-                  name: assetLibraryId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
                 - in: header
-                  name: Accept-Language
-                  schema:
-                      type: string
+                    name: Accept-Language
+                    schema:
+                        type: string
+                - in: path
+                    name: assetLibraryId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -3819,11 +3819,11 @@ paths:
             operationId: deleteBlogPostingImage
             parameters:
                 - in: path
-                  name: blogPostingImageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: blogPostingImageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -3838,11 +3838,11 @@ paths:
             operationId: getBlogPostingImage
             parameters:
                 - in: path
-                  name: blogPostingImageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: blogPostingImageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -3862,11 +3862,11 @@ paths:
             operationId: deleteBlogPosting
             parameters:
                 - in: path
-                  name: blogPostingId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: blogPostingId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -3881,11 +3881,11 @@ paths:
             operationId: getBlogPosting
             parameters:
                 - in: path
-                  name: blogPostingId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: blogPostingId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -3905,11 +3905,11 @@ paths:
             operationId: patchBlogPosting
             parameters:
                 - in: path
-                  name: blogPostingId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: blogPostingId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -3937,11 +3937,11 @@ paths:
             operationId: putBlogPosting
             parameters:
                 - in: path
-                  name: blogPostingId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: blogPostingId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -3969,37 +3969,37 @@ paths:
             operationId: getBlogPostingCommentsPage
             parameters:
                 - in: path
-                  name: blogPostingId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: blogPostingId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -4022,11 +4022,11 @@ paths:
             operationId: postBlogPostingComment
             parameters:
                 - in: path
-                  name: blogPostingId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: blogPostingId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -4054,11 +4054,11 @@ paths:
             operationId: deleteBlogPostingMyRating
             parameters:
                 - in: path
-                  name: blogPostingId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: blogPostingId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -4073,11 +4073,11 @@ paths:
             operationId: getBlogPostingMyRating
             parameters:
                 - in: path
-                  name: blogPostingId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: blogPostingId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -4096,11 +4096,11 @@ paths:
             operationId: postBlogPostingMyRating
             parameters:
                 - in: path
-                  name: blogPostingId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: blogPostingId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -4127,11 +4127,11 @@ paths:
             operationId: putBlogPostingMyRating
             parameters:
                 - in: path
-                  name: blogPostingId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: blogPostingId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -4159,11 +4159,11 @@ paths:
             operationId: deleteComment
             parameters:
                 - in: path
-                  name: commentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: commentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -4178,11 +4178,11 @@ paths:
             operationId: getComment
             parameters:
                 - in: path
-                  name: commentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: commentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -4202,11 +4202,11 @@ paths:
             operationId: putComment
             parameters:
                 - in: path
-                  name: commentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: commentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -4234,37 +4234,37 @@ paths:
             operationId: getCommentCommentsPage
             parameters:
                 - in: path
-                  name: parentCommentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: parentCommentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -4287,11 +4287,11 @@ paths:
             operationId: postCommentComment
             parameters:
                 - in: path
-                  name: parentCommentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: parentCommentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -4325,19 +4325,19 @@ paths:
             operationId: getContentSetContentSetElementsPage
             parameters:
                 - in: path
-                  name: contentSetId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: contentSetId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
             responses:
                 200:
                     content:
@@ -4361,11 +4361,11 @@ paths:
             operationId: getContentStructure
             parameters:
                 - in: path
-                  name: contentStructureId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: contentStructureId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -4385,42 +4385,42 @@ paths:
                 searched, and sorted.
             operationId: getContentStructureStructuredContentsPage
             parameters:
-                - in: path
-                  name: contentStructureId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
-                - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
-                - in: query
-                  name: filter
-                  schema:
-                      type: string
-                - in: query
-                  name: page
-                  schema:
-                      type: integer
-                - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
-                - in: query
-                  name: search
-                  schema:
-                      type: string
-                - in: query
-                  name: sort
-                  schema:
-                      type: string
                 - in: header
-                  name: Accept-Language
-                  schema:
-                      type: string
+                    name: Accept-Language
+                    schema:
+                        type: string
+                - in: path
+                    name: contentStructureId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
+                - in: query
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
+                - in: query
+                    name: filter
+                    schema:
+                        type: string
+                - in: query
+                    name: page
+                    schema:
+                        type: integer
+                - in: query
+                    name: pageSize
+                    schema:
+                        type: integer
+                - in: query
+                    name: search
+                    schema:
+                        type: string
+                - in: query
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -4444,11 +4444,11 @@ paths:
             operationId: deleteDocumentFolder
             parameters:
                 - in: path
-                  name: documentFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: documentFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -4463,11 +4463,11 @@ paths:
             operationId: getDocumentFolder
             parameters:
                 - in: path
-                  name: documentFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: documentFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -4486,11 +4486,11 @@ paths:
             operationId: patchDocumentFolder
             parameters:
                 - in: path
-                  name: documentFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: documentFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -4518,11 +4518,11 @@ paths:
             operationId: putDocumentFolder
             parameters:
                 - in: path
-                  name: documentFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: documentFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -4550,41 +4550,41 @@ paths:
             operationId: getDocumentFolderDocumentsPage
             parameters:
                 - in: path
-                  name: documentFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: documentFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: flatten
-                  schema:
-                      type: boolean
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: flatten
+                    schema:
+                        type: boolean
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -4609,11 +4609,11 @@ paths:
             operationId: postDocumentFolderDocument
             parameters:
                 - in: path
-                  name: documentFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: documentFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     multipart/form-data:
@@ -4642,11 +4642,11 @@ paths:
             operationId: putDocumentFolderSubscribe
             parameters:
                 - in: path
-                  name: documentFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: documentFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -4660,11 +4660,11 @@ paths:
             operationId: putDocumentFolderUnsubscribe
             parameters:
                 - in: path
-                  name: documentFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: documentFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -4680,41 +4680,41 @@ paths:
             operationId: getDocumentFolderDocumentFoldersPage
             parameters:
                 - in: path
-                  name: parentDocumentFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: parentDocumentFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: flatten
-                  schema:
-                      type: boolean
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: flatten
+                    schema:
+                        type: boolean
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -4737,11 +4737,11 @@ paths:
             operationId: postDocumentFolderDocumentFolder
             parameters:
                 - in: path
-                  name: parentDocumentFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: parentDocumentFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -4769,11 +4769,11 @@ paths:
             operationId: deleteDocument
             parameters:
                 - in: path
-                  name: documentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: documentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -4788,11 +4788,11 @@ paths:
             operationId: getDocument
             parameters:
                 - in: path
-                  name: documentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: documentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -4813,11 +4813,11 @@ paths:
             operationId: patchDocument
             parameters:
                 - in: path
-                  name: documentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: documentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     multipart/form-data:
@@ -4849,11 +4849,11 @@ paths:
             operationId: putDocument
             parameters:
                 - in: path
-                  name: documentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: documentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     multipart/form-data:
@@ -4884,37 +4884,37 @@ paths:
             operationId: getDocumentCommentsPage
             parameters:
                 - in: path
-                  name: documentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: documentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -4937,11 +4937,11 @@ paths:
             operationId: postDocumentComment
             parameters:
                 - in: path
-                  name: documentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: documentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -4969,11 +4969,11 @@ paths:
             operationId: deleteDocumentMyRating
             parameters:
                 - in: path
-                  name: documentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: documentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -4988,11 +4988,11 @@ paths:
             operationId: getDocumentMyRating
             parameters:
                 - in: path
-                  name: documentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: documentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -5011,11 +5011,11 @@ paths:
             operationId: postDocumentMyRating
             parameters:
                 - in: path
-                  name: documentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: documentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -5043,11 +5043,11 @@ paths:
             operationId: putDocumentMyRating
             parameters:
                 - in: path
-                  name: documentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: documentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -5075,11 +5075,11 @@ paths:
             operationId: deleteKnowledgeBaseArticle
             parameters:
                 - in: path
-                  name: knowledgeBaseArticleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: knowledgeBaseArticleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -5094,11 +5094,11 @@ paths:
             operationId: getKnowledgeBaseArticle
             parameters:
                 - in: path
-                  name: knowledgeBaseArticleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: knowledgeBaseArticleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -5117,11 +5117,11 @@ paths:
             operationId: patchKnowledgeBaseArticle
             parameters:
                 - in: path
-                  name: knowledgeBaseArticleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: knowledgeBaseArticleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -5149,11 +5149,11 @@ paths:
             operationId: putKnowledgeBaseArticle
             parameters:
                 - in: path
-                  name: knowledgeBaseArticleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: knowledgeBaseArticleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -5181,11 +5181,11 @@ paths:
             operationId: getKnowledgeBaseArticleKnowledgeBaseAttachmentsPage
             parameters:
                 - in: path
-                  name: knowledgeBaseArticleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: knowledgeBaseArticleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -5210,11 +5210,11 @@ paths:
             operationId: postKnowledgeBaseArticleKnowledgeBaseAttachment
             parameters:
                 - in: path
-                  name: knowledgeBaseArticleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: knowledgeBaseArticleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     multipart/form-data:
@@ -5245,11 +5245,11 @@ paths:
             operationId: deleteKnowledgeBaseArticleMyRating
             parameters:
                 - in: path
-                  name: knowledgeBaseArticleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: knowledgeBaseArticleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -5264,11 +5264,11 @@ paths:
             operationId: getKnowledgeBaseArticleMyRating
             parameters:
                 - in: path
-                  name: knowledgeBaseArticleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: knowledgeBaseArticleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -5287,11 +5287,11 @@ paths:
             operationId: postKnowledgeBaseArticleMyRating
             parameters:
                 - in: path
-                  name: knowledgeBaseArticleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: knowledgeBaseArticleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -5319,11 +5319,11 @@ paths:
             operationId: putKnowledgeBaseArticleMyRating
             parameters:
                 - in: path
-                  name: knowledgeBaseArticleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: knowledgeBaseArticleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -5349,11 +5349,11 @@ paths:
             operationId: putKnowledgeBaseArticleSubscribe
             parameters:
                 - in: path
-                  name: knowledgeBaseArticleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: knowledgeBaseArticleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -5367,11 +5367,11 @@ paths:
             operationId: putKnowledgeBaseArticleUnsubscribe
             parameters:
                 - in: path
-                  name: knowledgeBaseArticleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: knowledgeBaseArticleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -5388,41 +5388,41 @@ paths:
             operationId: getKnowledgeBaseArticleKnowledgeBaseArticlesPage
             parameters:
                 - in: path
-                  name: parentKnowledgeBaseArticleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: parentKnowledgeBaseArticleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: flatten
-                  schema:
-                      type: boolean
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: flatten
+                    schema:
+                        type: boolean
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -5446,11 +5446,11 @@ paths:
             operationId: postKnowledgeBaseArticleKnowledgeBaseArticle
             parameters:
                 - in: path
-                  name: parentKnowledgeBaseArticleId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: parentKnowledgeBaseArticleId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -5478,11 +5478,11 @@ paths:
             operationId: deleteKnowledgeBaseAttachment
             parameters:
                 - in: path
-                  name: knowledgeBaseAttachmentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: knowledgeBaseAttachmentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -5497,11 +5497,11 @@ paths:
             operationId: getKnowledgeBaseAttachment
             parameters:
                 - in: path
-                  name: knowledgeBaseAttachmentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: knowledgeBaseAttachmentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -5521,11 +5521,11 @@ paths:
             operationId: deleteKnowledgeBaseFolder
             parameters:
                 - in: path
-                  name: knowledgeBaseFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: knowledgeBaseFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -5540,11 +5540,11 @@ paths:
             operationId: getKnowledgeBaseFolder
             parameters:
                 - in: path
-                  name: knowledgeBaseFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: knowledgeBaseFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -5563,11 +5563,11 @@ paths:
             operationId: patchKnowledgeBaseFolder
             parameters:
                 - in: path
-                  name: knowledgeBaseFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: knowledgeBaseFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -5595,11 +5595,11 @@ paths:
             operationId: putKnowledgeBaseFolder
             parameters:
                 - in: path
-                  name: knowledgeBaseFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: knowledgeBaseFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -5628,41 +5628,41 @@ paths:
             operationId: getKnowledgeBaseFolderKnowledgeBaseArticlesPage
             parameters:
                 - in: path
-                  name: knowledgeBaseFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: knowledgeBaseFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: flatten
-                  schema:
-                      type: boolean
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: flatten
+                    schema:
+                        type: boolean
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -5685,11 +5685,11 @@ paths:
             operationId: postKnowledgeBaseFolderKnowledgeBaseArticle
             parameters:
                 - in: path
-                  name: knowledgeBaseFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: knowledgeBaseFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -5717,19 +5717,19 @@ paths:
             operationId: getKnowledgeBaseFolderKnowledgeBaseFoldersPage
             parameters:
                 - in: path
-                  name: parentKnowledgeBaseFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: parentKnowledgeBaseFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
             responses:
                 200:
                     content:
@@ -5752,11 +5752,11 @@ paths:
             operationId: postKnowledgeBaseFolderKnowledgeBaseFolder
             parameters:
                 - in: path
-                  name: parentKnowledgeBaseFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: parentKnowledgeBaseFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -5784,11 +5784,11 @@ paths:
             operationId: deleteMessageBoardAttachment
             parameters:
                 - in: path
-                  name: messageBoardAttachmentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardAttachmentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -5803,11 +5803,11 @@ paths:
             operationId: getMessageBoardAttachment
             parameters:
                 - in: path
-                  name: messageBoardAttachmentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardAttachmentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -5827,11 +5827,11 @@ paths:
             operationId: deleteMessageBoardMessage
             parameters:
                 - in: path
-                  name: messageBoardMessageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardMessageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -5846,11 +5846,11 @@ paths:
             operationId: getMessageBoardMessage
             parameters:
                 - in: path
-                  name: messageBoardMessageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardMessageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -5869,11 +5869,11 @@ paths:
             operationId: patchMessageBoardMessage
             parameters:
                 - in: path
-                  name: messageBoardMessageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardMessageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -5901,11 +5901,11 @@ paths:
             operationId: putMessageBoardMessage
             parameters:
                 - in: path
-                  name: messageBoardMessageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardMessageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -5933,11 +5933,11 @@ paths:
             operationId: getMessageBoardMessageMessageBoardAttachmentsPage
             parameters:
                 - in: path
-                  name: messageBoardMessageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardMessageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -5962,11 +5962,11 @@ paths:
             operationId: postMessageBoardMessageMessageBoardAttachment
             parameters:
                 - in: path
-                  name: messageBoardMessageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardMessageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     multipart/form-data:
@@ -5997,11 +5997,11 @@ paths:
             operationId: deleteMessageBoardMessageMyRating
             parameters:
                 - in: path
-                  name: messageBoardMessageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardMessageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -6016,11 +6016,11 @@ paths:
             operationId: getMessageBoardMessageMyRating
             parameters:
                 - in: path
-                  name: messageBoardMessageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardMessageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -6039,11 +6039,11 @@ paths:
             operationId: postMessageBoardMessageMyRating
             parameters:
                 - in: path
-                  name: messageBoardMessageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardMessageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -6071,11 +6071,11 @@ paths:
             operationId: putMessageBoardMessageMyRating
             parameters:
                 - in: path
-                  name: messageBoardMessageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardMessageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -6101,11 +6101,11 @@ paths:
             operationId: putMessageBoardMessageSubscribe
             parameters:
                 - in: path
-                  name: messageBoardMessageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardMessageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -6119,11 +6119,11 @@ paths:
             operationId: putMessageBoardMessageUnsubscribe
             parameters:
                 - in: path
-                  name: messageBoardMessageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardMessageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -6140,41 +6140,41 @@ paths:
             operationId: getMessageBoardMessageMessageBoardMessagesPage
             parameters:
                 - in: path
-                  name: parentMessageBoardMessageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: parentMessageBoardMessageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: flatten
-                  schema:
-                      type: boolean
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: flatten
+                    schema:
+                        type: boolean
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -6197,11 +6197,11 @@ paths:
             operationId: postMessageBoardMessageMessageBoardMessage
             parameters:
                 - in: path
-                  name: parentMessageBoardMessageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: parentMessageBoardMessageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -6229,11 +6229,11 @@ paths:
             operationId: deleteMessageBoardSection
             parameters:
                 - in: path
-                  name: messageBoardSectionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardSectionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -6248,11 +6248,11 @@ paths:
             operationId: getMessageBoardSection
             parameters:
                 - in: path
-                  name: messageBoardSectionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardSectionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -6271,11 +6271,11 @@ paths:
             operationId: patchMessageBoardSection
             parameters:
                 - in: path
-                  name: messageBoardSectionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardSectionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -6303,11 +6303,11 @@ paths:
             operationId: putMessageBoardSection
             parameters:
                 - in: path
-                  name: messageBoardSectionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardSectionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -6335,37 +6335,37 @@ paths:
             operationId: getMessageBoardSectionMessageBoardThreadsPage
             parameters:
                 - in: path
-                  name: messageBoardSectionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardSectionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -6388,11 +6388,11 @@ paths:
             operationId: postMessageBoardSectionMessageBoardThread
             parameters:
                 - in: path
-                  name: messageBoardSectionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardSectionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -6418,11 +6418,11 @@ paths:
             operationId: putMessageBoardSectionSubscribe
             parameters:
                 - in: path
-                  name: messageBoardSectionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardSectionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -6436,11 +6436,11 @@ paths:
             operationId: putMessageBoardSectionUnsubscribe
             parameters:
                 - in: path
-                  name: messageBoardSectionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardSectionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -6457,37 +6457,37 @@ paths:
             operationId: getMessageBoardSectionMessageBoardSectionsPage
             parameters:
                 - in: path
-                  name: parentMessageBoardSectionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: parentMessageBoardSectionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -6510,11 +6510,11 @@ paths:
             operationId: postMessageBoardSectionMessageBoardSection
             parameters:
                 - in: path
-                  name: parentMessageBoardSectionId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: parentMessageBoardSectionId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -6540,32 +6540,32 @@ paths:
             operationId: getMessageBoardThreadsRankedPage
             parameters:
                 - in: query
-                  name: dateCreated
-                  schema:
-                      format: date-time
-                      type: string
+                    name: dateCreated
+                    schema:
+                        format: date-time
+                        type: string
                 - in: query
-                  name: dateModified
-                  schema:
-                      format: date-time
-                      type: string
+                    name: dateModified
+                    schema:
+                        format: date-time
+                        type: string
                 - in: query
-                  name: messageBoardSectionId
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardSectionId
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -6589,11 +6589,11 @@ paths:
             operationId: deleteMessageBoardThread
             parameters:
                 - in: path
-                  name: messageBoardThreadId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardThreadId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -6608,11 +6608,11 @@ paths:
             operationId: getMessageBoardThread
             parameters:
                 - in: path
-                  name: messageBoardThreadId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardThreadId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -6631,11 +6631,11 @@ paths:
             operationId: patchMessageBoardThread
             parameters:
                 - in: path
-                  name: messageBoardThreadId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardThreadId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -6663,11 +6663,11 @@ paths:
             operationId: putMessageBoardThread
             parameters:
                 - in: path
-                  name: messageBoardThreadId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardThreadId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -6695,11 +6695,11 @@ paths:
             operationId: getMessageBoardThreadMessageBoardAttachmentsPage
             parameters:
                 - in: path
-                  name: messageBoardThreadId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardThreadId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -6724,11 +6724,11 @@ paths:
             operationId: postMessageBoardThreadMessageBoardAttachment
             parameters:
                 - in: path
-                  name: messageBoardThreadId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardThreadId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     multipart/form-data:
@@ -6759,37 +6759,37 @@ paths:
             operationId: getMessageBoardThreadMessageBoardMessagesPage
             parameters:
                 - in: path
-                  name: messageBoardThreadId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardThreadId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -6812,11 +6812,11 @@ paths:
             operationId: postMessageBoardThreadMessageBoardMessage
             parameters:
                 - in: path
-                  name: messageBoardThreadId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardThreadId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -6844,11 +6844,11 @@ paths:
             operationId: deleteMessageBoardThreadMyRating
             parameters:
                 - in: path
-                  name: messageBoardThreadId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardThreadId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -6863,11 +6863,11 @@ paths:
             operationId: getMessageBoardThreadMyRating
             parameters:
                 - in: path
-                  name: messageBoardThreadId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardThreadId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -6886,11 +6886,11 @@ paths:
             operationId: postMessageBoardThreadMyRating
             parameters:
                 - in: path
-                  name: messageBoardThreadId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardThreadId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -6918,11 +6918,11 @@ paths:
             operationId: putMessageBoardThreadMyRating
             parameters:
                 - in: path
-                  name: messageBoardThreadId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardThreadId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -6948,11 +6948,11 @@ paths:
             operationId: putMessageBoardThreadSubscribe
             parameters:
                 - in: path
-                  name: messageBoardThreadId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardThreadId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -6966,11 +6966,11 @@ paths:
             operationId: putMessageBoardThreadUnsubscribe
             parameters:
                 - in: path
-                  name: messageBoardThreadId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: messageBoardThreadId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -6987,11 +6987,11 @@ paths:
             operationId: deleteNavigationMenu
             parameters:
                 - in: path
-                  name: navigationMenuId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: navigationMenuId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -7006,11 +7006,11 @@ paths:
             operationId: getNavigationMenu
             parameters:
                 - in: path
-                  name: navigationMenuId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: navigationMenuId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -7031,11 +7031,11 @@ paths:
             operationId: putNavigationMenu
             parameters:
                 - in: path
-                  name: navigationMenuId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: navigationMenuId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -7063,37 +7063,37 @@ paths:
             operationId: getSiteBlogPostingImagesPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -7117,11 +7117,11 @@ paths:
             operationId: postSiteBlogPostingImage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     multipart/form-data:
@@ -7152,37 +7152,37 @@ paths:
             operationId: getSiteBlogPostingsPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -7205,11 +7205,11 @@ paths:
             operationId: postSiteBlogPosting
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -7235,11 +7235,11 @@ paths:
             operationId: putSiteBlogPostingSubscribe
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -7253,11 +7253,11 @@ paths:
             operationId: putSiteBlogPostingUnsubscribe
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -7271,37 +7271,37 @@ paths:
             operationId: getSiteContentElementsPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -7325,24 +7325,24 @@ paths:
             operationId: getSiteContentSetByKeyContentSetElementsPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: key
+                    required: true
+                    schema:
+                        type: string
                 - in: path
-                  name: key
-                  required: true
-                  schema:
-                      type: string
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
             responses:
                 200:
                     content:
@@ -7366,24 +7366,24 @@ paths:
             operationId: getSiteContentSetByUuidContentSetElementsPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: path
-                  name: uuid
-                  required: true
-                  schema:
-                      type: string
+                    name: uuid
+                    required: true
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
             responses:
                 200:
                     content:
@@ -7407,37 +7407,37 @@ paths:
             operationId: getSiteContentStructuresPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -7459,37 +7459,37 @@ paths:
             operationId: getSiteContentTemplatesPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -7511,16 +7511,16 @@ paths:
             operationId: getContentTemplate
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: contentTemplateId
+                    required: true
+                    schema:
+                        type: string
                 - in: path
-                  name: contentTemplateId
-                  required: true
-                  schema:
-                      type: string
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -7541,41 +7541,41 @@ paths:
             operationId: getSiteDocumentFoldersPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: flatten
-                  schema:
-                      type: boolean
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: flatten
+                    schema:
+                        type: boolean
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -7598,11 +7598,11 @@ paths:
             operationId: postSiteDocumentFolder
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -7631,41 +7631,41 @@ paths:
             operationId: getSiteDocumentsPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: flatten
-                  schema:
-                      type: boolean
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: flatten
+                    schema:
+                        type: boolean
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -7689,11 +7689,11 @@ paths:
             operationId: postSiteDocument
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     multipart/form-data:
@@ -7725,41 +7725,41 @@ paths:
             operationId: getSiteKnowledgeBaseArticlesPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: flatten
-                  schema:
-                      type: boolean
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: flatten
+                    schema:
+                        type: boolean
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -7782,11 +7782,11 @@ paths:
             operationId: postSiteKnowledgeBaseArticle
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -7812,11 +7812,11 @@ paths:
             operationId: putSiteKnowledgeBaseArticleSubscribe
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -7830,11 +7830,11 @@ paths:
             operationId: putSiteKnowledgeBaseArticleUnsubscribe
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -7850,19 +7850,19 @@ paths:
             operationId: getSiteKnowledgeBaseFoldersPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
             responses:
                 200:
                     content:
@@ -7885,11 +7885,11 @@ paths:
             operationId: postSiteKnowledgeBaseFolder
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -7918,41 +7918,41 @@ paths:
             operationId: getSiteMessageBoardMessagesPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: flatten
-                  schema:
-                      type: boolean
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: flatten
+                    schema:
+                        type: boolean
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -7973,21 +7973,21 @@ paths:
         get:
             operationId: getSiteMessageBoardMessageByFriendlyUrlPath
             parameters:
-                - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
-                - in: path
-                  name: friendlyUrlPath
-                  required: true
-                  schema:
-                      type: string
                 - in: header
-                  name: Accept-Language
-                  schema:
-                      type: string
+                    name: Accept-Language
+                    schema:
+                        type: string
+                - in: path
+                    name: friendlyUrlPath
+                    required: true
+                    schema:
+                        type: string
+                - in: path
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -8008,41 +8008,41 @@ paths:
             operationId: getSiteMessageBoardSectionsPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: flatten
-                  schema:
-                      type: boolean
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: flatten
+                    schema:
+                        type: boolean
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -8065,11 +8065,11 @@ paths:
             operationId: postSiteMessageBoardSection
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -8098,41 +8098,41 @@ paths:
             operationId: getSiteMessageBoardThreadsPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: flatten
-                  schema:
-                      type: boolean
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: flatten
+                    schema:
+                        type: boolean
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -8155,11 +8155,11 @@ paths:
             operationId: postSiteMessageBoardThread
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -8184,21 +8184,21 @@ paths:
         get:
             operationId: getSiteMessageBoardThreadByFriendlyUrlPath
             parameters:
-                - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
-                - in: path
-                  name: friendlyUrlPath
-                  required: true
-                  schema:
-                      type: string
                 - in: header
-                  name: Accept-Language
-                  schema:
-                      type: string
+                    name: Accept-Language
+                    schema:
+                        type: string
+                - in: path
+                    name: friendlyUrlPath
+                    required: true
+                    schema:
+                        type: string
+                - in: path
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -8218,19 +8218,19 @@ paths:
             operationId: getSiteNavigationMenusPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
             responses:
                 200:
                     content:
@@ -8254,11 +8254,11 @@ paths:
             operationId: postSiteNavigationMenu
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -8287,41 +8287,41 @@ paths:
             operationId: getSiteStructuredContentFoldersPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: flatten
-                  schema:
-                      type: boolean
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: flatten
+                    schema:
+                        type: boolean
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -8344,11 +8344,11 @@ paths:
             operationId: postSiteStructuredContentFolder
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -8376,46 +8376,46 @@ paths:
                 sorted.
             operationId: getSiteStructuredContentsPage
             parameters:
-                - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
-                - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
-                - in: query
-                  name: flatten
-                  schema:
-                      type: boolean
-                - in: query
-                  name: filter
-                  schema:
-                      type: string
-                - in: query
-                  name: page
-                  schema:
-                      type: integer
-                - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
-                - in: query
-                  name: search
-                  schema:
-                      type: string
-                - in: query
-                  name: sort
-                  schema:
-                      type: string
                 - in: header
-                  name: Accept-Language
-                  schema:
-                      type: string
+                    name: Accept-Language
+                    schema:
+                        type: string
+                - in: path
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
+                - in: query
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
+                - in: query
+                    name: filter
+                    schema:
+                        type: string
+                - in: query
+                    name: flatten
+                    schema:
+                        type: boolean
+                - in: query
+                    name: page
+                    schema:
+                        type: integer
+                - in: query
+                    name: pageSize
+                    schema:
+                        type: integer
+                - in: query
+                    name: search
+                    schema:
+                        type: string
+                - in: query
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -8437,16 +8437,16 @@ paths:
                 Creates a new structured content.
             operationId: postSiteStructuredContent
             parameters:
-                - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
                 - in: header
-                  name: Accept-Language
-                  schema:
-                      type: string
+                    name: Accept-Language
+                    schema:
+                        type: string
+                - in: path
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -8473,21 +8473,21 @@ paths:
                 Retrieves a structured content by its key (`articleKey`).
             operationId: getSiteStructuredContentByKey
             parameters:
-                - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
-                - in: path
-                  name: key
-                  required: true
-                  schema:
-                      type: string
                 - in: header
-                  name: Accept-Language
-                  schema:
-                      type: string
+                    name: Accept-Language
+                    schema:
+                        type: string
+                - in: path
+                    name: key
+                    required: true
+                    schema:
+                        type: string
+                - in: path
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -8506,21 +8506,21 @@ paths:
                 Retrieves a structured content by its UUID.
             operationId: getSiteStructuredContentByUuid
             parameters:
-                - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
-                - in: path
-                  name: uuid
-                  required: true
-                  schema:
-                      type: string
                 - in: header
-                  name: Accept-Language
-                  schema:
-                      type: string
+                    name: Accept-Language
+                    schema:
+                        type: string
+                - in: path
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
+                - in: path
+                    name: uuid
+                    required: true
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -8538,15 +8538,15 @@ paths:
             operationId: getSiteStructuredContentPermissionsPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: roleNames
-                  schema:
-                      type: string
+                    name: roleNames
+                    schema:
+                        type: string
             responses:
                 204:
                     content:
@@ -8559,11 +8559,11 @@ paths:
             operationId: putSiteStructuredContentPermission
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -8580,37 +8580,37 @@ paths:
             operationId: getSiteWikiNodesPage
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -8631,11 +8631,11 @@ paths:
             operationId: postSiteWikiNode
             parameters:
                 - in: path
-                  name: siteId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: siteId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -8664,37 +8664,37 @@ paths:
             operationId: getStructuredContentFolderStructuredContentFoldersPage
             parameters:
                 - in: path
-                  name: parentStructuredContentFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: parentStructuredContentFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -8717,11 +8717,11 @@ paths:
             operationId: postStructuredContentFolderStructuredContentFolder
             parameters:
                 - in: path
-                  name: parentStructuredContentFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: parentStructuredContentFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -8749,11 +8749,11 @@ paths:
             operationId: deleteStructuredContentFolder
             parameters:
                 - in: path
-                  name: structuredContentFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: structuredContentFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -8768,11 +8768,11 @@ paths:
             operationId: getStructuredContentFolder
             parameters:
                 - in: path
-                  name: structuredContentFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: structuredContentFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -8791,11 +8791,11 @@ paths:
             operationId: patchStructuredContentFolder
             parameters:
                 - in: path
-                  name: structuredContentFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: structuredContentFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -8823,11 +8823,11 @@ paths:
             operationId: putStructuredContentFolder
             parameters:
                 - in: path
-                  name: structuredContentFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: structuredContentFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -8854,46 +8854,46 @@ paths:
                 Retrieves the folder's structured content. Results can be paginated, filtered, searched, and sorted.
             operationId: getStructuredContentFolderStructuredContentsPage
             parameters:
-                - in: path
-                  name: structuredContentFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
-                - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
-                - in: query
-                  name: flatten
-                  schema:
-                      type: boolean
-                - in: query
-                  name: filter
-                  schema:
-                      type: string
-                - in: query
-                  name: page
-                  schema:
-                      type: integer
-                - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
-                - in: query
-                  name: search
-                  schema:
-                      type: string
-                - in: query
-                  name: sort
-                  schema:
-                      type: string
                 - in: header
-                  name: Accept-Language
-                  schema:
-                      type: string
+                    name: Accept-Language
+                    schema:
+                        type: string
+                - in: path
+                    name: structuredContentFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
+                - in: query
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
+                - in: query
+                    name: filter
+                    schema:
+                        type: string
+                - in: query
+                    name: flatten
+                    schema:
+                        type: boolean
+                - in: query
+                    name: page
+                    schema:
+                        type: integer
+                - in: query
+                    name: pageSize
+                    schema:
+                        type: integer
+                - in: query
+                    name: search
+                    schema:
+                        type: string
+                - in: query
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -8915,16 +8915,16 @@ paths:
                 Creates a new structured content in the folder.
             operationId: postStructuredContentFolderStructuredContent
             parameters:
-                - in: path
-                  name: structuredContentFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
                 - in: header
-                  name: Accept-Language
-                  schema:
-                      type: string
+                    name: Accept-Language
+                    schema:
+                        type: string
+                - in: path
+                    name: structuredContentFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -8950,11 +8950,11 @@ paths:
             operationId: putStructuredContentFolderSubscribe
             parameters:
                 - in: path
-                  name: structuredContentFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: structuredContentFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -8968,11 +8968,11 @@ paths:
             operationId: putStructuredContentFolderUnsubscribe
             parameters:
                 - in: path
-                  name: structuredContentFolderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: structuredContentFolderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -8988,11 +8988,11 @@ paths:
             operationId: deleteStructuredContent
             parameters:
                 - in: path
-                  name: structuredContentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: structuredContentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -9006,16 +9006,16 @@ paths:
                 Retrieves the structured content via its ID.
             operationId: getStructuredContent
             parameters:
-                - in: path
-                  name: structuredContentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
                 - in: header
-                  name: Accept-Language
-                  schema:
-                      type: string
+                    name: Accept-Language
+                    schema:
+                        type: string
+                - in: path
+                    name: structuredContentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -9033,16 +9033,16 @@ paths:
                 Updates only the fields received in the request body, leaving any other fields untouched.
             operationId: patchStructuredContent
             parameters:
-                - in: path
-                  name: structuredContentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
                 - in: header
-                  name: Accept-Language
-                  schema:
-                      type: string
+                    name: Accept-Language
+                    schema:
+                        type: string
+                - in: path
+                    name: structuredContentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -9069,16 +9069,16 @@ paths:
                 deleted, unless they are required.
             operationId: putStructuredContent
             parameters:
-                - in: path
-                  name: structuredContentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
                 - in: header
-                  name: Accept-Language
-                  schema:
-                      type: string
+                    name: Accept-Language
+                    schema:
+                        type: string
+                - in: path
+                    name: structuredContentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -9106,37 +9106,37 @@ paths:
             operationId: getStructuredContentCommentsPage
             parameters:
                 - in: path
-                  name: structuredContentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: structuredContentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -9159,11 +9159,11 @@ paths:
             operationId: postStructuredContentComment
             parameters:
                 - in: path
-                  name: structuredContentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: structuredContentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -9191,11 +9191,11 @@ paths:
             operationId: deleteStructuredContentMyRating
             parameters:
                 - in: path
-                  name: structuredContentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: structuredContentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -9210,11 +9210,11 @@ paths:
             operationId: getStructuredContentMyRating
             parameters:
                 - in: path
-                  name: structuredContentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: structuredContentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -9233,11 +9233,11 @@ paths:
             operationId: postStructuredContentMyRating
             parameters:
                 - in: path
-                  name: structuredContentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: structuredContentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -9265,11 +9265,11 @@ paths:
             operationId: putStructuredContentMyRating
             parameters:
                 - in: path
-                  name: structuredContentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: structuredContentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -9295,15 +9295,15 @@ paths:
             operationId: getStructuredContentPermissionsPage
             parameters:
                 - in: path
-                  name: structuredContentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: structuredContentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: roleNames
-                  schema:
-                      type: string
+                    name: roleNames
+                    schema:
+                        type: string
             responses:
                 204:
                     content:
@@ -9316,11 +9316,11 @@ paths:
             operationId: putStructuredContentPermission
             parameters:
                 - in: path
-                  name: structuredContentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: structuredContentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -9337,16 +9337,16 @@ paths:
             operationId: getStructuredContentRenderedContentTemplate
             parameters:
                 - in: path
-                  name: structuredContentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: contentTemplateId
+                    required: true
+                    schema:
+                        type: string
                 - in: path
-                  name: contentTemplateId
-                  required: true
-                  schema:
-                      type: string
+                    name: structuredContentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -9361,11 +9361,11 @@ paths:
             operationId: putStructuredContentSubscribe
             parameters:
                 - in: path
-                  name: structuredContentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: structuredContentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -9379,11 +9379,11 @@ paths:
             operationId: putStructuredContentUnsubscribe
             parameters:
                 - in: path
-                  name: structuredContentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: structuredContentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -9400,11 +9400,11 @@ paths:
             operationId: deleteWikiNode
             parameters:
                 - in: path
-                  name: wikiNodeId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: wikiNodeId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -9419,11 +9419,11 @@ paths:
             operationId: getWikiNode
             parameters:
                 - in: path
-                  name: wikiNodeId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: wikiNodeId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -9443,11 +9443,11 @@ paths:
             operationId: putWikiNode
             parameters:
                 - in: path
-                  name: wikiNodeId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: wikiNodeId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -9473,11 +9473,11 @@ paths:
             operationId: putWikiNodeSubscribe
             parameters:
                 - in: path
-                  name: wikiNodeId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: wikiNodeId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -9491,11 +9491,11 @@ paths:
             operationId: putWikiNodeUnsubscribe
             parameters:
                 - in: path
-                  name: wikiNodeId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: wikiNodeId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -9512,37 +9512,37 @@ paths:
             operationId: getWikiNodeWikiPagesPage
             parameters:
                 - in: path
-                  name: wikiNodeId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: wikiNodeId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
                 - in: query
-                  name: aggregationTerms
-                  schema:
-                      items:
-                          type: string
-                      type: array
+                    name: aggregationTerms
+                    schema:
+                        items:
+                            type: string
+                        type: array
                 - in: query
-                  name: filter
-                  schema:
-                      type: string
+                    name: filter
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  schema:
-                      type: integer
+                    name: page
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  schema:
-                      type: integer
+                    name: pageSize
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  schema:
-                      type: string
+                    name: sort
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -9563,11 +9563,11 @@ paths:
             operationId: postWikiNodeWikiPage
             parameters:
                 - in: path
-                  name: wikiNodeId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: wikiNodeId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -9596,11 +9596,11 @@ paths:
             operationId: deleteWikiPageAttachment
             parameters:
                 - in: path
-                  name: wikiPageAttachmentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: wikiPageAttachmentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -9615,11 +9615,11 @@ paths:
             operationId: getWikiPageAttachment
             parameters:
                 - in: path
-                  name: wikiPageAttachmentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: wikiPageAttachmentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -9640,11 +9640,11 @@ paths:
             operationId: getWikiPageWikiPagesPage
             parameters:
                 - in: path
-                  name: parentWikiPageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: parentWikiPageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -9665,11 +9665,11 @@ paths:
             operationId: postWikiPageWikiPage
             parameters:
                 - in: path
-                  name: parentWikiPageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: parentWikiPageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -9698,11 +9698,11 @@ paths:
             operationId: deleteWikiPage
             parameters:
                 - in: path
-                  name: wikiPageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: wikiPageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -9717,11 +9717,11 @@ paths:
             operationId: getWikiPage
             parameters:
                 - in: path
-                  name: wikiPageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: wikiPageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -9741,11 +9741,11 @@ paths:
             operationId: putWikiPage
             parameters:
                 - in: path
-                  name: wikiPageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: wikiPageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     application/json:
@@ -9771,11 +9771,11 @@ paths:
             operationId: putWikiPageSubscribe
             parameters:
                 - in: path
-                  name: wikiPageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: wikiPageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -9789,11 +9789,11 @@ paths:
             operationId: putWikiPageUnsubscribe
             parameters:
                 - in: path
-                  name: wikiPageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: wikiPageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 204:
                     content:
@@ -9810,11 +9810,11 @@ paths:
             operationId: getWikiPageWikiPageAttachmentsPage
             parameters:
                 - in: path
-                  name: wikiPageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: wikiPageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:
@@ -9838,11 +9838,11 @@ paths:
             operationId: postWikiPageWikiPageAttachment
             parameters:
                 - in: path
-                  name: wikiPageId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: wikiPageId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             requestBody:
                 content:
                     multipart/form-data:

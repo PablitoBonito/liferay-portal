@@ -56,11 +56,11 @@ paths:
         get:
             parameters:
                 - in: path
-                  name: documentId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: documentId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 default:
                     content:
@@ -102,11 +102,11 @@ paths:
         get:
             parameters:
                 - in: path
-                  name: folderId
-                  required: true
-                  schema:
-                      format: int64
-                      type: integer
+                    name: folderId
+                    required: true
+                    schema:
+                        format: int64
+                        type: integer
             responses:
                 200:
                     content:

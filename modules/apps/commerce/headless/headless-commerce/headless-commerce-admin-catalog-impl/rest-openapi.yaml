@@ -1187,16 +1187,16 @@ paths:
             operationId: deleteCatalogByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 204:
                     description:
@@ -1215,23 +1215,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Deletes a Catalog by external reference code.
             tags: ["Catalog"]
         get:
             operationId: getCatalogByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 200:
                     content:
@@ -1280,23 +1280,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Catalog by external reference code.
             tags: ["Catalog"]
         patch:
             operationId: patchCatalogByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -1350,7 +1350,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Catalog by external reference code.
             tags: ["Catalog"]
     /catalog/{id}:
@@ -1358,17 +1358,17 @@ paths:
             operationId: deleteCatalog
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 204:
                     description:
@@ -1387,24 +1387,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Deletes a Catalog by ID.
             tags: ["Catalog"]
         get:
             operationId: getCatalog
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 200:
                     content:
@@ -1453,24 +1453,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Catalog by ID.
             tags: ["Catalog"]
         patch:
             operationId: patchCatalog
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -1524,7 +1524,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Catalog by ID.
             tags: ["Catalog"]
     /catalogs:
@@ -1532,30 +1532,30 @@ paths:
             operationId: getCatalogsPage
             parameters:
                 - in: query
-                  name: filter
-                  required: false
-                  schema:
-                      type: string
+                    name: filter
+                    required: false
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  required: false
-                  schema:
-                      type: string
+                    name: search
+                    required: false
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  required: false
-                  schema:
-                      type: string
+                    name: sort
+                    required: false
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -1605,7 +1605,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Catalogs.
             tags: ["Catalog"]
         post:
@@ -1673,7 +1673,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Catalog.
             tags: ["Catalog"]
     /optionCategories:
@@ -1681,25 +1681,25 @@ paths:
             operationId: getOptionCategoriesPage
             parameters:
                 - in: query
-                  name: filter
-                  required: false
-                  schema:
-                      type: string
+                    name: filter
+                    required: false
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: sort
-                  required: false
-                  schema:
-                      type: string
+                    name: sort
+                    required: false
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -1749,7 +1749,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Option Categories.
             tags: ["OptionCategory"]
         post:
@@ -1817,7 +1817,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Option Category.
             tags: ["OptionCategory"]
     /optionCategories/{id}:
@@ -1825,17 +1825,17 @@ paths:
             operationId: deleteOptionCategory
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 204:
                     description:
@@ -1854,24 +1854,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Deletes a Option Category by ID.
             tags: ["OptionCategory"]
         get:
             operationId: getOptionCategory
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 200:
                     content:
@@ -1920,24 +1920,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Option Category by ID.
             tags: ["OptionCategory"]
         patch:
             operationId: patchOptionCategory
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -1991,7 +1991,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Option Category by ID.
             tags: ["OptionCategory"]
     /options:
@@ -1999,29 +1999,29 @@ paths:
             operationId: getOptionsPage
             parameters:
                 - in: query
-                  name: filter
-                  required: false
-                  schema:
-                      type: string
+                    name: filter
+                    required: false
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  required: false
-                  schema:
-                      type: string
+                    name: sort
+                    required: false
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -2071,7 +2071,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Option.
             tags: ["Option"]
         post:
@@ -2139,7 +2139,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates an Option.
             tags: ["Option"]
     /options/by-externalReferenceCode/{externalReferenceCode}:
@@ -2147,16 +2147,16 @@ paths:
             operationId: deleteOptionByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 204:
                     description:
@@ -2175,23 +2175,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Deletes a Option by external reference code.
             tags: ["Option"]
         get:
             operationId: getOptionByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 200:
                     content:
@@ -2240,23 +2240,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets an Option by external reference code.
             tags: ["Option"]
         patch:
             operationId: patchOptionByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -2310,7 +2310,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates an Option by external reference code.
             tags: ["Option"]
     /options/by-externalReferenceCode/{externalReferenceCode}/optionValues:
@@ -2318,30 +2318,30 @@ paths:
             operationId: getOptionByExternalReferenceCodeOptionValuesPage
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -2391,23 +2391,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Values related to an Option.
             tags: ["OptionValue"]
         post:
             operationId: postOptionByExternalReferenceCodeOptionValue
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -2471,7 +2471,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Value related to an Option.
             tags: ["OptionValue"]
     /options/{id}:
@@ -2479,17 +2479,17 @@ paths:
             operationId: deleteOption
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 204:
                     description:
@@ -2508,24 +2508,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Deletes a Option by ID.
             tags: ["Option"]
         get:
             operationId: getOption
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 200:
                     content:
@@ -2574,24 +2574,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets an Option by ID.
             tags: ["Option"]
         patch:
             operationId: patchOption
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -2645,7 +2645,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates an Option by ID.
             tags: ["Option"]
     /options/{id}/optionValues:
@@ -2653,31 +2653,31 @@ paths:
             operationId: getOptionIdOptionValuesPage
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -2727,24 +2727,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Values related to an Option.
             tags: ["OptionValue"]
         post:
             operationId: postOptionIdOptionValue
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -2808,24 +2808,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Value related to an Option.
             tags: ["OptionValue"]
     /product-group-products/{id}:
         delete:
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 204:
                     content:
@@ -2847,37 +2847,37 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Deletes a Product in a Product Group by ID.
             tags: ["ProductGroupProduct"]
     /product-groups:
         get:
             parameters:
                 - in: query
-                  name: filter
-                  required: false
-                  schema:
-                      type: string
+                    name: filter
+                    required: false
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  required: false
-                  schema:
-                      type: string
+                    name: search
+                    required: false
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  required: false
-                  schema:
-                      type: string
+                    name: sort
+                    required: false
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -2927,7 +2927,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Product Groups.
             tags: ["ProductGroup"]
         post:
@@ -2994,23 +2994,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Product Group.
             tags: ["ProductGroup"]
     /product-groups/by-externalReferenceCode/{externalReferenceCode}:
         delete:
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 204:
                     content:
@@ -3032,22 +3032,22 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Deletes a Product by external reference code.
             tags: ["ProductGroup"]
         get:
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 200:
                     content:
@@ -3096,22 +3096,22 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Product Group by external reference code.
             tags: ["ProductGroup"]
         patch:
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -3165,37 +3165,37 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Product Group by external reference code.
             tags: ["ProductGroup"]
     /product-groups/by-externalReferenceCode/{externalReferenceCode}/product-group-products:
         get:
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -3245,22 +3245,22 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Products related to a Product Group.
             tags: ["ProductGroupProduct"]
         post:
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -3324,24 +3324,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Product related to a Product Group.
             tags: ["ProductGroupProduct"]
     /product-groups/{id}:
         delete:
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 204:
                     content:
@@ -3363,23 +3363,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Deletes a Product Group by ID.
             tags: ["ProductGroup"]
         get:
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 200:
                     content:
@@ -3428,23 +3428,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Product Group by ID.
             tags: ["ProductGroup"]
         patch:
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -3498,38 +3498,38 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Product Group by ID.
             tags: ["ProductGroup"]
     /product-groups/{id}/product-group-products:
         get:
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -3579,23 +3579,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Products related to a Product Groups.
             tags: ["ProductGroupProduct"]
         post:
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -3659,7 +3659,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Product related to a Product Group.
             tags: ["ProductGroupProduct"]
     /productOptions/{id}:
@@ -3667,17 +3667,17 @@ paths:
             operationId: deleteProductOption
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 204:
                     description:
@@ -3696,24 +3696,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Deletes a Product Option by ID.
             tags: ["ProductOption"]
         get:
             operationId: getProductOption
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 200:
                     content:
@@ -3762,24 +3762,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Product Option by ID.
             tags: ["ProductOption"]
         patch:
             operationId: patchProductOption
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -3833,7 +3833,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Product Option by ID.
             tags: ["ProductOption"]
     /productOptions/{id}/productOptionValues:
@@ -3841,31 +3841,31 @@ paths:
             operationId: getProductOptionIdProductOptionValuesPage
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -3915,24 +3915,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Values related to a Product Option.
             tags: ["ProductOptionValue"]
         post:
             operationId: postProductOptionIdProductOptionValue
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -3996,7 +3996,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Value related to a Product Option.
             tags: ["ProductOptionValue"]
     /products:
@@ -4004,30 +4004,30 @@ paths:
             operationId: getProductsPage
             parameters:
                 - in: query
-                  name: filter
-                  required: false
-                  schema:
-                      type: string
+                    name: filter
+                    required: false
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  required: false
-                  schema:
-                      type: string
+                    name: search
+                    required: false
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  required: false
-                  schema:
-                      type: string
+                    name: sort
+                    required: false
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -4077,7 +4077,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Products.
             tags: ["Product"]
         post:
@@ -4145,7 +4145,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Product.
             tags: ["Product"]
     /products/by-externalReferenceCode/{externalReferenceCode}:
@@ -4153,16 +4153,16 @@ paths:
             operationId: deleteProductByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 204:
                     description:
@@ -4181,23 +4181,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Deletes a Product by external reference code.
             tags: ["Product"]
         get:
             operationId: getProductByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 200:
                     content:
@@ -4246,23 +4246,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Product by external reference code.
             tags: ["Product"]
         patch:
             operationId: patchProductByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -4316,7 +4316,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Product by external reference code.
             tags: ["Product"]
     /products/by-externalReferenceCode/{externalReferenceCode}/attachments:
@@ -4324,30 +4324,30 @@ paths:
             operationId: getProductByExternalReferenceCodeAttachmentsPage
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -4397,23 +4397,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Attachments related to a Product.
             tags: ["Attachment"]
         post:
             operationId: postProductByExternalReferenceCodeAttachment
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -4477,7 +4477,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Attachment related to a Product.
             tags: ["Attachment"]
     /products/by-externalReferenceCode/{externalReferenceCode}/attachments/by-base64:
@@ -4485,16 +4485,16 @@ paths:
             operationId: postProductByExternalReferenceCodeAttachmentByBase64
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -4558,7 +4558,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Image related to a Product.
             tags: ["Attachment"]
     /products/by-externalReferenceCode/{externalReferenceCode}/attachments/by-url:
@@ -4566,16 +4566,16 @@ paths:
             operationId: postProductByExternalReferenceCodeAttachmentByUrl
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -4639,33 +4639,33 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Image related to a Product.
             tags: ["Attachment"]
     /products/by-externalReferenceCode/{externalReferenceCode}/catalog:
         get:
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
                 - in: query
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
             responses:
                 200:
                     content:
@@ -4711,7 +4711,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets the catalog related to a Product.
             tags: ["Catalog"]
     /products/by-externalReferenceCode/{externalReferenceCode}/categories:
@@ -4719,30 +4719,30 @@ paths:
             operationId: getProductByExternalReferenceCodeCategoriesPage
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -4792,23 +4792,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Category related to a Product.
             tags: ["Category"]
         patch:
             operationId: patchProductByExternalReferenceCodeCategory
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -4866,34 +4866,34 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Category related to a Product.
             tags: ["Category"]
     /products/by-externalReferenceCode/{externalReferenceCode}/clone:
         post:
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
                 - in: query
-                  explode: false
-                  name: catalogExternalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The catalog external reference code, where to clone the product
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: catalogExternalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The catalog external reference code, where to clone the product
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 200:
                     content:
@@ -4942,7 +4942,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Clone a product.
             tags: ["Product"]
     /products/by-externalReferenceCode/{externalReferenceCode}/configuration:
@@ -4950,16 +4950,16 @@ paths:
             operationId: getProductByExternalReferenceCodeConfiguration
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 200:
                     content:
@@ -5008,23 +5008,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Product Configuration of a Product.
             tags: ["ProductConfiguration"]
         patch:
             operationId: patchProductByExternalReferenceCodeConfiguration
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -5078,7 +5078,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Product Configuration of a Product.
             tags: ["ProductConfiguration"]
     /products/by-externalReferenceCode/{externalReferenceCode}/images:
@@ -5086,30 +5086,30 @@ paths:
             operationId: getProductByExternalReferenceCodeImagesPage
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -5159,23 +5159,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Images related to a Product.
             tags: ["Attachment"]
         post:
             operationId: postProductByExternalReferenceCodeImage
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -5239,7 +5239,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Image related to a Product.
             tags: ["Attachment"]
     /products/by-externalReferenceCode/{externalReferenceCode}/images/by-base64:
@@ -5247,16 +5247,16 @@ paths:
             operationId: postProductByExternalReferenceCodeImageByBase64
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -5320,7 +5320,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Image related to a Product.
             tags: ["Attachment"]
     /products/by-externalReferenceCode/{externalReferenceCode}/images/by-url:
@@ -5328,16 +5328,16 @@ paths:
             operationId: postProductByExternalReferenceCodeImageByUrl
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -5401,7 +5401,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Image related to a Product.
             tags: ["Attachment"]
     /products/by-externalReferenceCode/{externalReferenceCode}/productOptions:
@@ -5409,30 +5409,30 @@ paths:
             operationId: getProductByExternalReferenceCodeProductOptionsPage
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -5485,23 +5485,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Product Options of a Product.
             tags: ["ProductOption"]
         post:
             operationId: postProductByExternalReferenceCodeProductOptionsPage
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -5573,7 +5573,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a list of Product Options of a Product.
             tags: ["ProductOption"]
     /products/by-externalReferenceCode/{externalReferenceCode}/relatedProducts:
@@ -5581,37 +5581,37 @@ paths:
             operationId: getProductByExternalReferenceCodeRelatedProductsPage
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
                 - in: query
-                  explode: true
-                  name: type
-                  required: false
-                  schema:
-                      type: string
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: type
+                    required: false
+                    schema:
+                        type: string
+                    style: form
             responses:
                 200:
                     content:
@@ -5661,23 +5661,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Related Products of a Product.
             tags: ["RelatedProduct"]
         post:
             operationId: postProductByExternalReferenceCodeRelatedProduct
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -5741,7 +5741,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Related Product of a Product
             tags: ["RelatedProduct"]
     /products/by-externalReferenceCode/{externalReferenceCode}/shippingConfiguration:
@@ -5749,16 +5749,16 @@ paths:
             operationId: getProductByExternalReferenceCodeShippingConfiguration
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 200:
                     content:
@@ -5807,23 +5807,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Product Shipping Configuration of a Product.
             tags: ["ProductShippingConfiguration"]
         patch:
             operationId: patchProductByExternalReferenceCodeShippingConfiguration
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -5877,7 +5877,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Product Shipping Configuration of a Product.
             tags: ["ProductShippingConfiguration"]
     /products/by-externalReferenceCode/{externalReferenceCode}/skus:
@@ -5885,30 +5885,30 @@ paths:
             operationId: getProductByExternalReferenceCodeSkusPage
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -5958,23 +5958,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Skus related to a Product.
             tags: ["Sku"]
         post:
             operationId: postProductByExternalReferenceCodeSku
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -6038,7 +6038,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Sku related to a Product.
             tags: ["Sku"]
     /products/by-externalReferenceCode/{externalReferenceCode}/subscriptionConfiguration:
@@ -6046,16 +6046,16 @@ paths:
             operationId: getProductByExternalReferenceCodeSubscriptionConfiguration
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 200:
                     content:
@@ -6104,23 +6104,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Product Subscription Configuration of a Product.
             tags: ["ProductSubscriptionConfiguration"]
         patch:
             operationId: patchProductByExternalReferenceCodeSubscriptionConfiguration
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -6174,7 +6174,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Product Subscription Configuration of a Product.
             tags: ["ProductSubscriptionConfiguration"]
     /products/by-externalReferenceCode/{externalReferenceCode}/taxConfiguration:
@@ -6182,16 +6182,16 @@ paths:
             operationId: getProductByExternalReferenceCodeTaxConfiguration
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 200:
                     content:
@@ -6240,23 +6240,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Product Tax Configuration of a Product.
             tags: ["ProductTaxConfiguration"]
         patch:
             operationId: patchProductByExternalReferenceCodeTaxConfiguration
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -6310,7 +6310,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Product Tax Configuration of a Product.
             tags: ["ProductTaxConfiguration"]
     /products/{id}:
@@ -6318,17 +6318,17 @@ paths:
             operationId: deleteProduct
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 204:
                     description:
@@ -6347,24 +6347,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Deletes a Product by ID.
             tags: ["Product"]
         get:
             operationId: getProduct
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 200:
                     content:
@@ -6413,24 +6413,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Product by ID.
             tags: ["Product"]
         patch:
             operationId: patchProduct
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -6484,7 +6484,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Product by ID.
             tags: ["Product"]
     /products/{id}/attachments:
@@ -6492,31 +6492,31 @@ paths:
             operationId: getProductIdAttachmentsPage
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -6566,24 +6566,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Attachments related to a Product.
             tags: ["Attachment"]
         post:
             operationId: postProductIdAttachment
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -6647,7 +6647,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Attachment related to a Product.
             tags: ["Attachment"]
     /products/{id}/attachments/by-base64:
@@ -6655,17 +6655,17 @@ paths:
             operationId: postProductIdAttachmentByBase64
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -6729,7 +6729,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Image related to a Product.
             tags: ["Attachment"]
     /products/{id}/attachments/by-url:
@@ -6737,17 +6737,17 @@ paths:
             operationId: postProductIdAttachmentByUrl
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -6811,34 +6811,34 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Image related to a Product.
             tags: ["Attachment"]
     /products/{id}/catalog:
         get:
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
                 - in: query
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
             responses:
                 200:
                     content:
@@ -6884,7 +6884,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets the catalog related to a Product.
             tags: ["Catalog"]
     /products/{id}/categories:
@@ -6892,31 +6892,31 @@ paths:
             operationId: getProductIdCategoriesPage
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -6966,24 +6966,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Category related to a Product.
             tags: ["Category"]
         patch:
             operationId: patchProductIdCategory
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -7041,35 +7041,35 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Category related to a Product.
             tags: ["Category"]
     /products/{id}/clone:
         post:
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
                 - in: query
-                  name: catalogId
-                  required: false
-                  schema:
-                      description:
-                          The catalog Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    name: catalogId
+                    required: false
+                    schema:
+                        description:
+                            The catalog Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 200:
                     content:
@@ -7118,7 +7118,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Product by ID.
             tags: ["Product"]
     /products/{id}/configuration:
@@ -7126,17 +7126,17 @@ paths:
             operationId: getProductIdConfiguration
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 200:
                     content:
@@ -7185,24 +7185,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Product by ID.
             tags: ["ProductConfiguration"]
         patch:
             operationId: patchProductIdConfiguration
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -7256,7 +7256,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Product by ID.
             tags: ["ProductConfiguration"]
     /products/{id}/images:
@@ -7264,31 +7264,31 @@ paths:
             operationId: getProductIdImagesPage
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -7338,24 +7338,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Images related to a Product.
             tags: ["Attachment"]
         post:
             operationId: postProductIdImage
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -7419,7 +7419,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Image related to a Product.
             tags: ["Attachment"]
     /products/{id}/images/by-base64:
@@ -7427,17 +7427,17 @@ paths:
             operationId: postProductIdImageByBase64
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -7501,7 +7501,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Image related to a Product.
             tags: ["Attachment"]
     /products/{id}/images/by-url:
@@ -7509,17 +7509,17 @@ paths:
             operationId: postProductIdImageByUrl
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -7583,7 +7583,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Image related to a Product.
             tags: ["Attachment"]
     /products/{id}/productOptions:
@@ -7591,31 +7591,31 @@ paths:
             operationId: getProductIdProductOptionsPage
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -7668,24 +7668,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Product by ID.
             tags: ["ProductOption"]
         post:
             operationId: postProductIdProductOptionsPage
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -7757,7 +7757,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a list of Product Options related to a Product.
             tags: ["ProductOption"]
     /products/{id}/productSpecifications:
@@ -7765,31 +7765,31 @@ paths:
             operationId: getProductIdProductSpecificationsPage
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -7839,24 +7839,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Values related to a Specification.
             tags: ["ProductSpecification"]
         post:
             operationId: postProductIdProductSpecification
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -7920,7 +7920,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Value related to a Specification
             tags: ["ProductSpecification"]
     /products/{id}/relatedProducts:
@@ -7928,38 +7928,38 @@ paths:
             operationId: getProductIdRelatedProductsPage
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
                 - in: query
-                  explode: true
-                  name: type
-                  required: false
-                  schema:
-                      type: string
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: type
+                    required: false
+                    schema:
+                        type: string
+                    style: form
             responses:
                 200:
                     content:
@@ -8009,24 +8009,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Related Products of a Product.
             tags: ["RelatedProduct"]
         post:
             operationId: postProductIdRelatedProduct
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -8090,7 +8090,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Related Product of a Product
             tags: ["RelatedProduct"]
     /products/{id}/shippingConfiguration:
@@ -8098,17 +8098,17 @@ paths:
             operationId: getProductIdShippingConfiguration
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 200:
                     content:
@@ -8157,24 +8157,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Product by ID.
             tags: ["ProductShippingConfiguration"]
         patch:
             operationId: patchProductIdShippingConfiguration
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -8228,7 +8228,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Product by ID.
             tags: ["ProductShippingConfiguration"]
     /products/{id}/skus:
@@ -8236,31 +8236,31 @@ paths:
             operationId: getProductIdSkusPage
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
                 - in: query
-                  explode: true
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
                 - in: query
-                  explode: true
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
-                  style: form
+                    explode: true
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
+                    style: form
             responses:
                 200:
                     content:
@@ -8310,24 +8310,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Skus related to a Product.
             tags: ["Sku"]
         post:
             operationId: postProductIdSku
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -8391,7 +8391,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Sku related to a Product.
             tags: ["Sku"]
     /products/{id}/subscriptionConfiguration:
@@ -8399,17 +8399,17 @@ paths:
             operationId: getProductIdSubscriptionConfiguration
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 200:
                     content:
@@ -8458,24 +8458,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Product by ID.
             tags: ["ProductSubscriptionConfiguration"]
         patch:
             operationId: patchProductIdSubscriptionConfiguration
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -8529,7 +8529,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Product by ID.
             tags: ["ProductSubscriptionConfiguration"]
     /products/{id}/taxConfiguration:
@@ -8537,17 +8537,17 @@ paths:
             operationId: getProductIdTaxConfiguration
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 200:
                     content:
@@ -8596,24 +8596,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Product by ID.
             tags: ["ProductTaxConfiguration"]
         patch:
             operationId: patchProductIdTaxConfiguration
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -8667,7 +8667,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Product by ID.
             tags: ["ProductTaxConfiguration"]
     /relatedProducts/{id}:
@@ -8675,17 +8675,17 @@ paths:
             operationId: deleteRelatedProduct
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 204:
                     description:
@@ -8704,24 +8704,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Deletes a Related Product by ID.
             tags: ["RelatedProduct"]
         get:
             operationId: getRelatedProduct
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 200:
                     content:
@@ -8770,7 +8770,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Related Product by ID.
             tags: ["RelatedProduct"]
     /skus:
@@ -8778,30 +8778,30 @@ paths:
             operationId: getSkusPage
             parameters:
                 - in: query
-                  name: filter
-                  required: false
-                  schema:
-                      type: string
+                    name: filter
+                    required: false
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  required: false
-                  schema:
-                      type: string
+                    name: search
+                    required: false
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  required: false
-                  schema:
-                      type: string
+                    name: sort
+                    required: false
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -8854,7 +8854,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Skus.
             tags: ["Sku"]
     /skus/by-externalReferenceCode/{externalReferenceCode}:
@@ -8862,16 +8862,16 @@ paths:
             operationId: deleteSkuByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 204:
                     description:
@@ -8890,23 +8890,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Deletes a Sku by external reference code.
             tags: ["Sku"]
         get:
             operationId: getSkuByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             responses:
                 200:
                     content:
@@ -8955,23 +8955,23 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Sku by external reference code.
             tags: ["Sku"]
         patch:
             operationId: patchSkuByExternalReferenceCode
             parameters:
                 - in: path
-                  explode: false
-                  name: externalReferenceCode
-                  required: true
-                  schema:
-                      description:
-                          The resource external reference code
-                      example: AB-34098-789-N
-                      minLength: 1
-                      type: string
-                  style: simple
+                    explode: false
+                    name: externalReferenceCode
+                    required: true
+                    schema:
+                        description:
+                            The resource external reference code
+                        example: AB-34098-789-N
+                        minLength: 1
+                        type: string
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -9025,7 +9025,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Sku by external reference code.
             tags: ["Sku"]
     /skus/{id}:
@@ -9033,17 +9033,17 @@ paths:
             operationId: deleteSku
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 204:
                     description:
@@ -9062,24 +9062,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Deletes a Sku by ID.
             tags: ["Sku"]
         get:
             operationId: getSku
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 200:
                     content:
@@ -9128,24 +9128,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Sku by ID.
             tags: ["Sku"]
         patch:
             operationId: patchSku
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -9199,7 +9199,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Sku by ID.
             tags: ["Sku"]
     /specifications:
@@ -9207,29 +9207,29 @@ paths:
             operationId: getSpecificationsPage
             parameters:
                 - in: query
-                  name: filter
-                  required: false
-                  schema:
-                      type: string
+                    name: filter
+                    required: false
+                    schema:
+                        type: string
                 - in: query
-                  name: page
-                  required: false
-                  schema:
-                      type: integer
+                    name: page
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: pageSize
-                  required: false
-                  schema:
-                      type: integer
+                    name: pageSize
+                    required: false
+                    schema:
+                        type: integer
                 - in: query
-                  name: search
-                  schema:
-                      type: string
+                    name: search
+                    schema:
+                        type: string
                 - in: query
-                  name: sort
-                  required: false
-                  schema:
-                      type: string
+                    name: sort
+                    required: false
+                    schema:
+                        type: string
             responses:
                 200:
                     content:
@@ -9279,7 +9279,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a list of Specifications.
             tags: ["Specification"]
         post:
@@ -9347,7 +9347,7 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Creates or updates a Specification.
             tags: ["Specification"]
     /specifications/{id}:
@@ -9355,17 +9355,17 @@ paths:
             operationId: deleteSpecification
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 204:
                     description:
@@ -9384,24 +9384,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Deletes a Specification by ID.
             tags: ["Specification"]
         get:
             operationId: getSpecification
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             responses:
                 200:
                     content:
@@ -9450,24 +9450,24 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.read
+                    - HeadlessCommerceAdminCatalog.read
             summary: Gets a Specification by ID.
             tags: ["Specification"]
         patch:
             operationId: patchSpecification
             parameters:
                 - in: path
-                  explode: false
-                  name: id
-                  required: true
-                  schema:
-                      description:
-                          The resource Id
-                      example: 30130
-                      format: int64
-                      minimum: 0
-                      type: integer
-                  style: simple
+                    explode: false
+                    name: id
+                    required: true
+                    schema:
+                        description:
+                            The resource Id
+                        example: 30130
+                        format: int64
+                        minimum: 0
+                        type: integer
+                    style: simple
             requestBody:
                 content:
                     application/json:
@@ -9521,10 +9521,10 @@ paths:
                 - BasicAuth: []
                 - BearerAuth: []
                 - OAuth2:
-                      - HeadlessCommerceAdminCatalog.write
+                    - HeadlessCommerceAdminCatalog.write
             summary: Updates a Specification by ID.
             tags: ["Specification"]
 servers:
     - description:
-          SwaggerHub API Auto Mocking
+        SwaggerHub API Auto Mocking
       url: https://virtserver.swaggerhub.com/liferayinc/commerce-admin-catalog/v1.0
