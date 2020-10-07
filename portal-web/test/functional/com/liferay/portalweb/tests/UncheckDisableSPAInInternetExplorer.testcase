@@ -1,0 +1,33 @@
+definition {
+
+	property portal.release = "true";
+	property portal.upstream = "true";
+	property testray.component.names = "User Interface";
+	property testray.main.component.name = "User Interface";
+
+	setUp {
+		User.firstLoginPG();
+	}
+
+	test UncheckDisableSPAInInternetExplorer {
+
+		ApplicationsMenu.gotoPortlet(
+			category = "Configuration",
+			panel = "Control Panel",
+			portlet = "System Settings");
+
+		SystemSettings.gotoConfiguration(
+			configurationCategory = "Infrastructure",
+			configurationName = "Frontend SPA Infrastructure",
+			configurationScope = "System Scope");
+
+		FrontendSPAInfrastructure.UncheckDisableSPA();
+
+		FrontendSPAInfrastructure.Save();
+
+		AssertNotChecked.assertNotChecked(
+			locator1 = "FrontendSPAInfrastructure#Disable_SPA",
+			value1 = "Disable SPA in Internet Explorer");
+	}
+
+}
