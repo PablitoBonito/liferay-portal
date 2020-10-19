@@ -5,14 +5,14 @@ definition {
 	property portal.upstream = "true";
 	property testray.component.names = "User Interface";
 	property testray.main.component.name = "User Interface";
-	
+
 	setUp {
 	User.firstLoginPG();
 	}
 
 	tearDown {
 			Page.tearDownCP();
-		
+
 	}
 
 test addRemoteWebApp{
@@ -21,31 +21,31 @@ test addRemoteWebApp{
 			category = "Custom Apps",
 			panel = "Applications",
 			portlet = "Remote Apps");
-			
+
 	AddRemoteApp.new();
-	
+
 	AddRemoteApp.name(
 		EnterName = "Test Remote App");
 	AddRemoteApp.url(
 		EnterUrl = "http://remote-app-test.wincent.com/");
 
 	PortletEntry.save();
-	
+
 	Navigator.openURL();
-	
-	
-	ProductMenu.gotoPortlet(	
+
+	ProductMenu.gotoPortlet(
 		category = "Site Builder",
-		portlet = "Pages");	
-	
+		portlet = "Pages");
+
 	SitePages.addPublicPage(pageName = "Test Remote App Page");
 		Navigator.gotoPage(pageName = "Test Remote App Page");
 		Portlet.addPG(portletName = "Test Remote App");
-Pause(locator1 = "1000")
-AssertTextEquals.assertPartialText(
+
+	Pause(locator1 = "1000")
+	AssertTextEquals.assertPartialText(
 			locator1 = "RemoteApps#LINK",
 			value1 = "Company ID");
-AssertTextEquals.assertPartialText(
+	AssertTextEquals.assertPartialText(
 			locator1 = "Button#ANY",
 			value1 = "Say hello");
 
